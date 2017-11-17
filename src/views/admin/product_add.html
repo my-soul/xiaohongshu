@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title>后台管理中心</title>
+    <% include ./common/head.html %>
+        <link rel="stylesheet" href="/lib/jquery-ui-1.12.1.sort/jquery-ui.min.css">
+</head>
+
+<style type="text/css">
+    #editer [class*='icon-']:before {
+        display: inline-block;
+        font-family: "icomoon";
+    }
+</style>
+
+<body style="background-color:#f2f9fd;">
+    <% include ./common/header.html %>
+        <% include ./common/leftnav.html %>
+
+            <ul class="bread">
+                <li>
+                    <a href="/admin" target="right" class="icon-home"> 首页</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <%if(product.product_id){%>
+                            编辑商品
+                            <%}else{%>
+                                发布商品
+                                <% }%>
+                    </a>
+                </li>
+            </ul>
+            <div class="admin">
+                <div class="body-content">
+                    <form method="post" class="form-x" action="<%if(product.product_id){%>/admin/product_edit<%}else{%>/admin/product_add<%}%>">
+                        <input type="hidden" name="product_id" value="<%= product.product_id %>">
+                        <div class="form-group">
+                            <div class="label">
+                                <label>标题：</label>
+                            </div>
+                            <div class="">
+                                <input type="text" class="input wp50" name="title" data-validate="required:请输入标题" value="<%= product.product_name %>" />
+                                <div class="tips"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label">
+                                <label>二级标题：</label>
+                            </div>
+                            <div class="field">
+                                <input type="text" class="input wp50" name="sub_title" data-validate="required:请输入二级标题" value="<%= product.product_subtitle %>" />
+                                <div class="tips"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label">
+                                <label>价格：</label>
+                            </div>
+                            <div class="field">
+                                <input type="number" class="input wp50" name="price" data-validate="required:请输入价格" value="<%= product.product_price %>" />
+                                <div class="tips"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label">
+                                <label>市场价：</label>
+                            </div>
+                            <div class="field">
+                                <input type="number" class="input wp50" name="market_price" data-validate="required:请输入市场价" value="<%= product.product_market_price %>" />
+                                <div class="tips"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label">
+                                <label>排序：</label>
+                            </div>
+                            <div class="field">
+                                <input type="number" class="input wp50" name="sort" data-validate="required:排序" value="<%= product.sort %>" />
+                                <div class="tips">值越大,位置越靠前</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label">
+                                <label>库存：</label>
+                            </div>
+                            <div class="field">
+                                <input type="number" class="input wp50" name="stock" data-validate="required:排序" value="<%= product.stock %>" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label">
+                                <label>规格属性：</label>
+                                <input type="hidden" name="spec">
+                            </div>
+                            <div class="field">
+                                <div class="border clr">
+                                    <div class="j-spec-box">
+                                        <%if(product.product_spec){%>
+                                            <%product.product_spec.forEach(function(spec){%>
+                                                <div class="m10 j-spec">
+                                                    规格名&nbsp;<input type="text" class="input w140" value="<%= spec.spec_name %>" name="spec_name" />&nbsp;&nbsp; 规格值&nbsp;
+                                                    <input type="text" class="input w200" value="<%= spec.spec_value %>" name="spec_value" />
+                                                    <button class="button bg-yellow-light j-spec-del">删除</button>
+                                                </div>
+                                                <%});%>
+                                                    <%}%>
+
+                                    </div>
+                                    <div>
+                                        <span class="button border-blue m10 csp j-spec-add">增加规格</span>
+                                    </div>
+                                    <div class="tips m10">
+                                        最多可添加2组自定义参数（非必填）; 建议：如：镜头：15cm,18cm,20cm.属性值之间用英文逗号进行间隔；
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="label">
+                                <label>图片：</label>
+                                <input type="hidden" name="image">
+                                <input type="hidden" name="image_more">
+                            </div>
+                            <div class="field">
+                                <div class="clr">
+                                    <span class="posr">							
+									<input type="file" id="imagefile" style="filter:alpha(opacity=0);opacity:0;width: 90px;height: 32px;position: absolute;">
+									<input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传" style="float:left;padding: 5px 10px;">
+								</span>
+                                    <div class="tipss">图片尺寸：200*200,第一张图片将作为主图</div>
+                                </div>
+                                <div style="min-height: 120px;" class="border fx j-product-image sortable p10">
+                                    <%if(product.product_image_more){%>
+
+                                        <% product.product_image_more.split(',').forEach(function(img){ %>
+                                            <div class="m5"><img src="<%= img %>" alt="" class="img-responsive" width="100" data-href="<%= img %>" />
+                                                <p class="j-del tac csp">删除</p>
+                                            </div>
+                                            <%}); %>
+                                                <%}%>
+                                </div>
+                                <div class="tips"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="label">
+                                <label>商品详情：</label>
+                                <input type="hidden" name="body">
+                            </div>
+                            <div class="field">
+                                <div id="editer" style="width: 550px;">
+                                    <%- product.product_body %>
+                                </div>
+                                <div class="tips "></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <div class="label ">
+                                <label></label>
+                            </div>
+                            <div class="field ">
+                                <button class="button bg-main j-submit"> 提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <script type="text/javascript " src="/lib/jquery-ui-1.12.1.sort/jquery-ui.min.js"></script>
+            <script type="text/javascript " src="/lib/jquery.fileupload.js"></script>
+            <script type="text/javascript " src="/lib/release/wangEditor.js "></script>
+            <script type="text/javascript ">
+                $(function() {
+                    $(".sortable").sortable();
+                    $(".j-product-image").on("click", ".j-del", function() {
+                        $(this).parent().remove();
+                    })
+
+                    $('.j-spec-box').on('click', '.j-spec-del', function() {
+                        $(this).parents('.j-spec').remove();
+                    });
+
+                    $('.j-spec-add').on('click', function() {
+                        var sHtml = '<div class="m10 j-spec">' +
+                            '规格名&nbsp;<input type="text" class="input w140" value="" name="spec_name" />&nbsp;&nbsp; 规格值&nbsp;' +
+                            '<input type="text" class="input w200" value="" name="spec_value" />' +
+                            '<button class="button bg-yellow-light j-spec-del">删除</button>' +
+                            '</div>';
+                        $('.j-spec-box').append(sHtml);
+                    });
+
+                    var ajaxfile = $('#imagefile').fileupload({
+                        url: '/api/upload',
+                        done: function(e, data) {
+                            if (data.result) {
+                                var d = JSON.parse(data.result);
+                                if (d.code == '200') {
+                                    $('.j-product-image').append('<div class="m5"><img src="' + d.url + '" alt="" class="img-responsive" width="100" data-href="' + d.url + '"/><p class="j-del tac csp">删除</p></div>');
+                                    $(".sortable").sortable();
+                                } else {}
+
+                            }
+                        }
+                    });
+                });
+
+                var E = window.wangEditor;
+                window.editor = new E('#editer');
+                editor.customConfig.uploadImgServer = '/api/upload';
+                editor.customConfig.uploadImgMaxSize = 3 * 1024 * 1024;
+                editor.customConfig.uploadImgMaxLength = 5;
+                editor.customConfig.menus = [
+                    'head', // 标题
+                    'bold', // 粗体
+                    'italic', // 斜体
+                    'underline', // 下划线
+                    'strikeThrough', // 删除线
+                    'foreColor', // 文字颜色
+                    'backColor', // 背景颜色
+                    'link', // 插入链接
+                    'list', // 列表
+                    'justify', // 对齐方式
+                    //'quote',  // 引用
+                    'emoticon', // 表情
+                    'image', // 插入图片
+                    'table', // 表格
+                    //'video',  // 插入视频
+                    //'code',  // 插入代码
+                    'undo', // 撤销
+                    'redo' // 重复
+                ]
+
+                editor.customConfig.uploadImgHooks = {
+                    success: function(xhr, editor, result) {
+                        // 图片上传并返回结果，图片插入成功之后触发
+                        // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象，result 是服务器端返回的结果
+                    },
+                    error: function(xhr, editor) {
+                        // 图片上传出错时触发
+                        // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象
+                    },
+                    timeout: function(xhr, editor) {
+                        // 图片上传超时时触发
+                        // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象
+                    },
+
+                    // 如果服务器端返回的不是 {errno:0, data: [...]} 这种格式，可使用该配置
+                    // （但是，服务器端返回的必须是一个 JSON 格式字符串！！！否则会报错）
+                    customInsert: function(insertImg, result, editor) {
+                        // 图片上传并返回结果，自定义插入图片的事件（而不是编辑器自动插入图片！！！）
+                        // insertImg 是插入图片的函数，editor 是编辑器对象，result 是服务器端返回的结果
+
+                        // 举例：假如上传图片成功后，服务器端返回的是 {url:'....'} 这种格式，即可这样插入图片：
+                        var url = result.url
+                        insertImg(url)
+
+                        // result 必须是一个 JSON 格式字符串！！！否则报错
+                    }
+                }
+
+                editor.create();
+                $('.w-e-text-container').height(750);
+
+
+                $('.j-submit').bind('click', submit);
+
+                function submit() {
+                    var spec = [];
+                    $('.j-spec').each(function() {
+                        var spec_name = $(this).find('[name="spec_name"]').val();
+                        var spec_value = $(this).find('[name="spec_value"]').val();
+                        if (spec_name && spec_value) {
+                            spec.push({
+                                spec_name: spec_name,
+                                spec_value: spec_value
+                            });
+                        }
+                    });
+                    $('input[name="spec"]').val(JSON.stringify(spec));
+
+                    var product_image = "";
+                    var product_image_more = "";
+                    $(".j-product-image [data-href]").each(function() {
+                        product_image_more += $(this).attr("data-href") + ",";
+                    });
+                    if (!product_image_more) {
+                        alert('请选择商品图片');
+                        return false;
+                    }
+                    product_image = product_image_more.split(',')[0];
+                    product_image_more = product_image_more.substring(0, product_image_more.length - 1);
+                    $("input[name='image']").val(product_image);
+                    $("input[name='image_more']").val(product_image_more);
+
+                    $("input[name=body]").val(editor.txt.html());
+
+                    document.forms[0].submit();
+
+                    layer.load(1);
+                    $('.j-submit').unbind('click');
+                }
+            </script>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title>后台管理中心</title>
+    <% include ./common/head.html %>
+    <link rel="stylesheet" href="/lib/jquery-ui-1.12.1.sort/jquery-ui.min.css">
+</head>
+
+<body style="background-color:#f2f9fd;">
+    <% include ./common/header.html %>
+        <% include ./common/leftnav.html %>
+
+    <ul class="bread">
+        <li><a href="/admin" target="right" class="icon-home"> 首页</a></li>
+        <li><a href="#">网站信息</a></li>
+    </ul>
+    <div class="admin">
+        <div class="panel admin-panel">
+            <div class="panel-head"><strong><span class="icon-key"></span> 网站设置</strong></div>
+            <div class="body-content">
+                <form method="post" class="form-x" action="/admin/setting">
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="sitename">网站名称：</label>
+                        </div>
+                        <div class="field">
+                            <input type="sitename" class="input w200" id="mpass" name="sitename" size="150"  value="<%=sitename%>"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="sitename">网站域名：</label>
+                        </div>
+                        <div class="field">
+                            <input type="sitename" class="input w200" id="mpass" name="sitehost" size="150"  value="<%=sitehost%>"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="label">
+                            <label for="sitename">跳转域名：</label>
+                        </div>
+                        <div class="field">
+                            <input type="sitename" class="input w200" id="mpass" name="domain" size="150"  value="<%=domain%>"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label>首页广告图片：</label>
+                            <input type="hidden" name="banner">
+                        </div>
+                        <div class="field">
+                            <div class="clr">
+                                <span class="posr">							
+                                <input type="file" id="imagefile" style="filter:alpha(opacity=0);opacity:0;width: 90px;height: 32px;position: absolute;">
+                                <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传" style="float:left;padding: 5px 10px;">
+                            </span>
+                                <div class="tipss">图片比例：2:1</div>
+                            </div>
+                            <div style="min-height: 120px;" class="border fx sortable j-product-image p10">
+                                <%if(banner){%>
+                                    <% banner.forEach(function(ban){ %>
+                                        <div class="m5 j-banner"><img src="<%= ban.img %>" alt="" class="img-responsive" width="160" data-href="<%= ban.img %>" />
+                                            <p class="tac csp"><input type="text" value="<%= ban.url %>" name="url"></p>
+                                            <p class="j-del tac csp">删除</p>
+                                        </div>
+                                    <%}); %>
+                                <%}%>
+                            </div>
+                            <div class="tips"></div>
+                        </div>
+                    </div>
+    
+
+                    <div class="form-group">
+                        <div class="label">
+                            <label></label>
+                        </div>
+                        <div class="field">
+                            <button class="button bg-main icon-check-square-o j-submit" type=""> 提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript " src="/lib/jquery-ui-1.12.1.sort/jquery-ui.min.js"></script>
+    <script type="text/javascript " src="/lib/jquery.fileupload.js"></script>
+    <script>
+        $(function() {
+            $(".sortable").sortable();
+            $(".j-product-image").on("click", ".j-del", function() {
+                $(this).parent().remove();
+            })
+
+            var ajaxfile = $('#imagefile').fileupload({
+                url: '/api/upload',
+                done: function(e, data) {
+                    if (data.result) {
+                        var d = JSON.parse(data.result);
+                        if (d.code == '200') {
+                            $('.j-product-image').append('<div class="m5 j-banner"><img src="' + d.url + '" alt="" class="img-responsive" width="100" data-href="' + d.url + '"/> <p class="tac csp"><input type="text" placeholder="跳转链接" value="/product?id=" name="url"></p><p class="j-del tac csp">删除</p></div>');
+                            $(".sortable").sortable();
+                        } else {}
+
+                    }
+
+
+                }
+            });
+
+
+            $('.j-submit').bind('click', submit);
+
+                function submit() {
+                    var banner = [];                  
+                    $('.j-banner').each(function(){
+                        var img = $(this).find('[data-href]').attr('data-href');
+                        var url = $(this).find('input[name="url"]').val();
+                        if(!url){alert('请填写广告跳转地址')}
+                        banner.push({img:img,url:url});
+                    });
+                    $("input[name=banner]").val(JSON.stringify(banner));
+
+                    document.forms[0].submit();
+
+                    layer.load(1);
+                    $('.j-submit').unbind('click');
+                }
+        });
+        
+    </script>
+</body>
+
+</html>

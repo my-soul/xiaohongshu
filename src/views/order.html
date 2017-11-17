@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= sitename %></title>
+    <% include ./common/header.html %>
+</head>
+
+<body>
+    <a href="/address" class="order-address j-address" style="display:none;">
+        <div class="icon">
+        </div>
+        <div class="info">
+            <div>
+                收货人: <span class="address-name">张伟</span>
+                <span class="right mr5 address-phone">15678987678</span>
+            </div>
+            <div>
+                收货地址: <span class="address-address1"></span><span class="address-address2"></span>
+            </div>
+        </div>
+        <div class="nav">
+        </div>
+    </a>
+    <div class="tac p10 bg-white mt5 j-add-address">
+        <a href="/address" class="fs18 icon-add primary">
+				添加收货地址
+			</a>
+    </div>
+    <div class="mt10">
+        <ul>
+            <li class="order-product">
+                <div class="img">
+                    <img src="<%= record.product_image %>" alt="" />
+                </div>
+                <div class="content">
+                    <p class="tit">
+                        <%= record.product_name %>
+                    </p>
+                    <div class="spec">
+                        <span class="item"><%= record.attr %></span>
+                    </div>
+                </div>
+                <div class="ext fx-shrink-0">
+                    <div class="price primary">&yen;
+                        <%= record.product_price %>
+                    </div>
+                    <div class="quantity">x
+                        <%= record.amount %>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="mt5 bg-white">
+            <div class="m-cell">
+                <div class="cell-l">
+                    <span>礼券</span>
+                </div>
+                <div class="cell-r">
+                    <span>无可用礼券</span>
+                </div>
+            </div>
+            <div class="m-cell">
+                <div class="cell-l">
+                    <span>运费</span>
+                </div>
+                <div class="cell-r">
+                    <span>&yen;0</span>
+                </div>
+            </div>
+            <div class="m-cell">
+                <div class="cell-l">
+                    <span>总计</span>
+                </div>
+                <div class="cell-r">
+                    <span>&yen;<%= record.price %></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order-foot">
+        <div class="summary">
+            共
+            <%= record.amount %>件,实付: <span class="primary price">&yen;<%= record.price %></span>
+        </div>
+        <div class="pay bg-primary">确认支付</div>
+    </div>
+
+
+    <script>
+        var address = localStorage.getItem('address')?JSON.parse(localStorage.getItem('address')):null;
+
+        if (address) {
+            $('.address-name').html(address.address_name);
+            $('.address-phone').html(address.address_phone);
+            $('.address-address1').html(address.address_address1);
+            $('.address-address2').html(address.address_address2);
+
+            $(".j-add-address").hide();
+            $(".j-address").show();
+        }
+
+        $('.pay').click(function() {
+            if (!address) {
+                alert('请选择地址');
+                return;
+            }
+            var param = {};
+            param.address_name = address.address_name;
+            param.address_phone = address.address_phone;
+            param.address_address1 = address.address_address1;
+            param.address_address2 = address.address_address2;
+            param.id = '<%= record.record_id %>';
+            $.ajax({
+                url: '/record/pay',
+                type: 'POST',
+                data: param,
+                dataType: 'json',
+                success: function(data) {
+                    location.href = '/record/pay?id=<%= record.record_id %>';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

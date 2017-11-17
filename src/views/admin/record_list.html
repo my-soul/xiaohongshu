@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title>后台管理中心</title>
+    <% include ./common/head.html %>
+</head>
+
+<body style="background-color:#f2f9fd;">
+    <% include ./common/header.html %>
+    <% include ./common/leftnav.html %>
+    <ul class="bread">
+        <li><a href="/admin" target="right" class="icon-home"> 首页</a></li>
+        <li><a href="#">购买记录</a></li>
+    </ul>
+    <div class="admin mb30">
+        <form method="post" action="" id="listform">
+            <div class="panel admin-panel">
+                <table class="table table-hover text-center">
+                    <tr>
+                        <th>商品</th>
+                        <th class="w100">名称</th>
+                        <th>数量</th>
+                        <th>总金额</th>
+                        <th>姓名</th>
+                        <th>手机</th>
+                        <th>地址</th>
+
+                        <th>状态</th>
+
+                        <th>更新时间</th>
+                        <th>操作</th>
+                    </tr>
+
+                    <% records.forEach(function(record){ %>
+
+                    <tr>
+                        <td width="10%"><img src="<%= record.product_image %>" alt="" width="70" height="70" /></td>
+                        <td>
+                            <%= record.product_name %>
+                        </td>
+                        <td>
+                            <%= record.amount %>
+                        </td>
+                        <td>
+                            <%= record.price %>
+                        </td>
+
+                        <td>
+                            <%= record.customer %>
+                        </td>
+                        <td>
+                            <%= record.cellphone %>
+                        </td>
+                        <td>
+                            <%= record.address %>
+                        </td>
+
+                        <td>
+                            <%= record.state %>
+                        </td>
+
+                        <td>
+                            <%= record.create_time %>
+                        </td>
+                        <td>
+                            <div class="button-group">
+                                <a class="button border-red" href="javascript:void(0)" onclick="return del_record('<%= record.record_id %>')">
+                                    <span class="icon-trash-o"></span> 删除</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <%}); %>
+                </table>
+            </div>
+        </form>
+        <div id="laypage" class="f-tar f-py10"></div>
+	    <script type="text/javascript">
+            laypage({
+                cont: 'laypage', //容器。值支持id名、原生dom对象，jquery对象。
+                pages: <%= page_count %>, //通过后台拿到的总页数
+                curr: <%= page %>, //当前页
+                skin: '#3c8dbc',
+                skip: true,
+                jump: function(obj, first) { //触发分页后的回调
+                    if(!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                        //demo(obj.curr);
+                        window.location.href = '/admin/record_list?page='+obj.curr;
+                    }
+                }
+            });
+        </script>
+    </div>
+    <script>
+        function del_record(id){
+            if(confirm('确定删除')){
+                $.ajax({
+                    url:'/record/del',
+                    type:'POST',
+                    data:{id:id},
+                    dataType:'json',
+                    success:function (data) {
+                        if(data.code == 200){
+                            alert('删除成功');
+                            location.reload();
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

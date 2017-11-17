@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>淘</title>
+    <% include ./common/header.html %>
+    <link href="/lib/dropload/dropload.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="list">
+        <% products.forEach(function(product){ %>
+            <a class="m-card" href="/product?id=<%= product.product_id %>">
+                <div class="cont-l">
+                    <img src="<%= product.product_image %>" alt="" width="120px" height="120px" />
+                </div>
+                <div class="cont-r">
+                    <p class="tit fs16 ellipsis2 gray-b" style="min-height: 2em;">
+                        <%= product.product_name %>
+                    </p>
+                    <p class="info mt5">
+                        <span class="red fs18">&yen;<%= product.product_price %></span>
+                        <del class="gray-c fs12">&yen;<%= product.product_market_price %></del>
+                    </p>
+                    <div class="foot">
+                        <span class="buy">立即抢购</span>
+                    </div>
+                </div>
+            </a>          
+        <%}); %>
+        </div>
+    </div>    
+</body>
+
+</html>

@@ -1,0 +1,1688 @@
+[2017-07-05 09:47:45.971] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 500 126 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:48:58.011] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 500 126 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:50:15.455] [ERROR] app - Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:730:10)
+    at ServerResponse.contentType (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:558:15)
+    at ServerResponse.send (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:145:14)
+    at res.render.done (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:967:10)
+    at tryHandleCache (D:\money\store\src\node_modules\.2.5.6@ejs\lib\ejs.js:208:10)
+    at View.exports.renderFile [as engine] (D:\money\store\src\node_modules\.2.5.6@ejs\lib\ejs.js:412:10)
+    at View.render (D:\money\store\src\node_modules\.4.15.3@express\lib\view.js:128:8)
+    at tryRender (D:\money\store\src\node_modules\.4.15.3@express\lib\application.js:640:10)
+    at EventEmitter.render (D:\money\store\src\node_modules\.4.15.3@express\lib\application.js:592:3)
+[2017-07-05 09:51:51.206] [FATAL] app - RangeError: Invalid status code: 1
+    at ServerResponse.writeHead (_http_server.js:192:11)
+    at ServerResponse.writeHead (D:\money\store\src\node_modules\.1.0.1@on-headers\index.js:55:19)
+    at ServerResponse.writeHead (D:\money\store\src\node_modules\.1.0.1@on-headers\index.js:55:19)
+    at ServerResponse.res.writeHead (D:\money\store\src\node_modules\.1.1.1@log4js\lib\connect-logger.js:67:9)
+    at ServerResponse._implicitHeader (_http_server.js:157:8)
+    at ServerResponse.OutgoingMessage.end (_http_outgoing.js:571:10)
+    at writeend (D:\money\store\src\node_modules\.1.15.3@express-session\index.js:261:22)
+    at onsave (D:\money\store\src\node_modules\.1.15.3@express-session\index.js:335:11)
+    at Command.callback (D:\money\store\src\node_modules\.3.3.0@connect-redis\lib\connect-redis.js:201:10)
+    at normal_reply (D:\money\store\src\node_modules\.2.7.1@redis\index.js:721:21)
+[2017-07-05 09:54:14.907] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 200 16 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:54:28.037] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:54:43.533] [FATAL] app - RangeError: Invalid status code: 1
+    at ServerResponse.writeHead (_http_server.js:192:11)
+    at ServerResponse.writeHead (D:\money\store\src\node_modules\.1.0.1@on-headers\index.js:55:19)
+    at ServerResponse.writeHead (D:\money\store\src\node_modules\.1.0.1@on-headers\index.js:55:19)
+    at ServerResponse.res.writeHead (D:\money\store\src\node_modules\.1.1.1@log4js\lib\connect-logger.js:67:9)
+    at ServerResponse._implicitHeader (_http_server.js:157:8)
+    at ServerResponse.OutgoingMessage.end (_http_outgoing.js:571:10)
+    at writeend (D:\money\store\src\node_modules\.1.15.3@express-session\index.js:261:22)
+    at onsave (D:\money\store\src\node_modules\.1.15.3@express-session\index.js:335:11)
+    at Command.callback (D:\money\store\src\node_modules\.3.3.0@connect-redis\lib\connect-redis.js:201:10)
+    at normal_reply (D:\money\store\src\node_modules\.2.7.1@redis\index.js:721:21)
+[2017-07-05 09:55:16.804] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 200 1 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:55:19.490] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:55:22.060] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:55:24.685] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:55:26.971] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:55:47.744] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:56:30.566] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 200 1 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:56:34.350] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 200 1 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:56:36.616] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 200 1 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:56:38.899] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 200 1 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:58:10.655] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 200 1 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 09:58:51.197] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 200 2 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 10:04:20.760] [TRACE] app - ::1 - - "GET / HTTP/1.1" 200 1 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:15:04.128] [TRACE] app - ::1 - - "GET /admin/a HTTP/1.1" 404 96 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:16:16.574] [TRACE] app - /admin/a Interceptored
+[2017-07-05 10:18:02.629] [TRACE] app - /admin/a Interceptored
+[2017-07-05 10:18:02.908] [TRACE] app - ::1 - - "GET /admin/a HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:02.917] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:03.242] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:03.245] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:03.566] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:03.570] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:03.887] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:03.891] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:04.216] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:04.221] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:04.543] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:04.546] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:04.874] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:04.875] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:05.198] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:05.203] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:05.528] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:05.539] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:05.858] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:05.861] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:06.175] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:06.178] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:06.498] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:06.503] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:06.821] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:06.822] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:07.130] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:07.134] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:07.455] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:07.458] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:07.778] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:07.785] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:08.089] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:08.093] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:08.384] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:08.389] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:08.707] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:08.710] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:09.532] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:09.533] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:09.847] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:14.920] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:15.241] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:15.245] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:15.566] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:15.570] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:15.892] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:15.897] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:16.218] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:16.221] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:17.061] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:17.061] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:17.382] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:17.387] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:17.707] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:17.709] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:18.014] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:18.020] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:18.333] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:18.334] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:18.654] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:18.658] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:18.980] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:18.989] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:19.304] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:19.307] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:19.626] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:19.629] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:19.950] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:19.953] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:20.272] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:20.275] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:20.601] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:20.602] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:21.469] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:21.470] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:22.857] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:22.859] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:23.195] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:23.198] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:23.542] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:23.545] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:24.367] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:53.916] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:54.260] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:54.264] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:55.142] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:55.145] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:55.506] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:55.520] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:55.862] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:55.867] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:56.211] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:56.214] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:56.557] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:56.560] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:56.906] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:56.911] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:57.255] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:57.259] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:57.602] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:57.607] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:57.949] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:57.955] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:58.299] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:59.163] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:59.453] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:59.458] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:18:59.737] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:18:59.742] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:19:00.038] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:19:00.043] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:19:00.346] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:19:00.350] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:19:00.652] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:19:00.656] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:19:00.982] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:19:00.983] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:19:01.308] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:19:01.313] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:19:01.651] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:19:01.655] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:19:01.985] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:19:01.989] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:19:02.327] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:02.877] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:03.229] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:03.243] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:03.606] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:03.611] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:03.980] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:03.990] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:04.357] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:04.360] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:05.250] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:05.251] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:05.594] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:05.596] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:05.940] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:06.840] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:07.182] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:07.188] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:07.531] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:07.534] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:07.878] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:07.882] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:08.226] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:08.229] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:08.572] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:08.574] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:08.918] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:09.819] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:10.162] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:10.168] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:10.510] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:14.707] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:15.050] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:15.051] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:15.357] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:15.360] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:15.649] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:15.653] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:15.952] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:15.955] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:16.266] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:20:16.270] [TRACE] app - /admin/login Interceptored
+[2017-07-05 10:20:16.591] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:21:04.713] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2789 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:21:11.502] [TRACE] app - /admin/a Interceptored
+[2017-07-05 10:21:12.548] [TRACE] app - ::1 - - "GET /admin/a HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:21:13.627] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:21:36.510] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:24:52.526] [TRACE] app - /admin/a Interceptored
+[2017-07-05 10:24:52.891] [TRACE] app - ::1 - - "GET /admin/a HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:24:54.149] [TRACE] app - ::ffff:127.0.0.1 - - "GET /admin/login HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:24:56.424] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:24:57.792] [TRACE] app - ::ffff:127.0.0.1 - - "GET /admin/login HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:24:59.196] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:24:59.761] [TRACE] app - ::1 - - "GET /admin/images/passcode.jpg HTTP/1.1" 302 34 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:25:00.830] [TRACE] app - ::ffff:127.0.0.1 - - "GET /admin/login HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:25:01.975] [TRACE] app - /admin/ Interceptored
+[2017-07-05 10:25:02.259] [TRACE] app - ::ffff:127.0.0.1 - - "GET /admin/ HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:25:02.544] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:25:04.120] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:25:04.453] [TRACE] app - ::1 - - "GET /admin/images/passcode.jpg HTTP/1.1" 302 34 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:25:06.689] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:28:14.729] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:28:15.597] [TRACE] app - ::1 - - "GET /admin/images/passcode.jpg? HTTP/1.1" 302 34 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:28:15.941] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:28:15.945] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:28:16.279] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:28:16.279] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:28:16.617] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:28:17.291] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:28:17.291] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:28:18.310] [TRACE] app - ::1 - - "GET /admin/images/passcode.jpg??????? HTTP/1.1" 302 34 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:28:18.649] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:28:30.908] [TRACE] app - /admin/images/passcode.jpg Interceptored
+[2017-07-05 10:28:31.695] [TRACE] app - ::1 - - "GET /admin/images/passcode.jpg???????? HTTP/1.1" 302 34 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:28:31.929] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:31:19.462] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2780 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:31:35.833] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 404 96 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:32:12.498] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 500 104 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:34:14.266] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 500 100 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:34:47.236] [TRACE] models/redis - 生成的验证码是：8864
+[2017-07-05 10:34:50.150] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:34:52.594] [TRACE] models/redis - 生成的验证码是：6615
+[2017-07-05 10:34:52.938] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:34:54.954] [TRACE] models/redis - 生成的验证码是：2917
+[2017-07-05 10:34:55.294] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:34:57.467] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2780 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:34:57.711] [TRACE] models/redis - 生成的验证码是：9879
+[2017-07-05 10:34:57.923] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:35:03.648] [TRACE] models/redis - 生成的验证码是：5830
+[2017-07-05 10:35:03.921] [TRACE] app - ::1 - - "GET /captcha? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:35:05.100] [TRACE] models/redis - 生成的验证码是：6923
+[2017-07-05 10:35:05.448] [TRACE] app - ::1 - - "GET /captcha?? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:35:06.628] [TRACE] models/redis - 生成的验证码是：6097
+[2017-07-05 10:35:06.974] [TRACE] app - ::1 - - "GET /captcha??? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:35:18.939] [TRACE] models/redis - 生成的验证码是：8060
+[2017-07-05 10:35:19.287] [TRACE] app - ::1 - - "GET /captcha???? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:35:20.200] [TRACE] models/redis - 生成的验证码是：1312
+[2017-07-05 10:35:22.152] [TRACE] app - ::1 - - "GET /captcha????? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:47:05.930] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 500 395 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:47:55.048] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2879 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:47:56.295] [TRACE] models/redis - 生成的验证码是：9565
+[2017-07-05 10:47:56.691] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:48:10.691] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 404 100 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:48:39.697] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2879 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:48:40.123] [TRACE] models/redis - 生成的验证码是：2824
+[2017-07-05 10:48:40.511] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:49:50.462] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2879 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:49:52.267] [TRACE] models/redis - 生成的验证码是：2238
+[2017-07-05 10:49:53.646] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:50:49.290] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2944 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:50:50.024] [TRACE] models/redis - 生成的验证码是：4583
+[2017-07-05 10:50:50.705] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:51:00.670] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2944 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:51:01.070] [TRACE] models/redis - 生成的验证码是：6542
+[2017-07-05 10:51:01.422] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:51:22.687] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2944 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:51:22.980] [TRACE] models/redis - 生成的验证码是：2613
+[2017-07-05 10:51:23.249] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:51:39.105] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2944 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:51:39.498] [TRACE] models/redis - 生成的验证码是：1630
+[2017-07-05 10:51:39.847] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:53:17.386] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2944 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:53:18.373] [TRACE] models/redis - 生成的验证码是：3676
+[2017-07-05 10:53:18.692] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:54:46.842] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2944 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:54:46.845] [TRACE] models/redis - 生成的验证码是：5333
+[2017-07-05 10:54:46.848] [TRACE] models/redis - 生成的验证码是：6804
+[2017-07-05 10:54:47.410] [TRACE] models/redis - 生成的验证码是：8333
+[2017-07-05 10:54:47.659] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:54:54.230] [TRACE] models/redis - 生成的验证码是：4540
+[2017-07-05 10:54:54.521] [TRACE] app - ::1 - - "GET /captcha? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:56:24.783] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:56:24.790] [TRACE] app - /admin Interceptored
+[2017-07-05 10:56:24.791] [TRACE] app - was signed in
+[2017-07-05 10:56:25.687] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 3456 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:56:34.276] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:59:17.200] [TRACE] app - ::1 - - "GET /login.html HTTP/1.1" 404 99 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:59:33.880] [TRACE] app - ::1 - - "GET /login.html HTTP/1.1" 404 99 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:59:38.512] [TRACE] app - /admin Interceptored
+[2017-07-05 10:59:38.512] [TRACE] app - was signed in
+[2017-07-05 10:59:38.865] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 3459 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:59:45.488] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 10:59:53.144] [TRACE] app - /admin/logout Interceptored
+[2017-07-05 10:59:53.144] [TRACE] app - was signed in
+[2017-07-05 10:59:53.612] [TRACE] app - ::1 - - "GET /admin/logout HTTP/1.1" 404 101 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:00:54.759] [TRACE] app - /admin Interceptored
+[2017-07-05 11:00:54.761] [TRACE] app - was signed in
+[2017-07-05 11:00:54.767] [TRACE] app - /admin Interceptored
+[2017-07-05 11:00:54.767] [TRACE] app - was signed in
+[2017-07-05 11:01:01.221] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 3459 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:11.495] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:13.487] [TRACE] app - /admin Interceptored
+[2017-07-05 11:01:13.487] [TRACE] app - was signed in
+[2017-07-05 11:01:13.782] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 3459 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:15.015] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:17.370] [TRACE] app - /admin/logout Interceptored
+[2017-07-05 11:01:17.370] [TRACE] app - was signed in
+[2017-07-05 11:01:17.680] [TRACE] app - ::1 - - "GET /admin/logout HTTP/1.1" 302 68 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:17.974] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2879 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:18.565] [TRACE] models/redis - 生成的验证码是：6799
+[2017-07-05 11:01:18.852] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:22.334] [TRACE] app - /admin Interceptored
+[2017-07-05 11:01:22.671] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:22.976] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2879 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:23.311] [TRACE] models/redis - 生成的验证码是：9588
+[2017-07-05 11:01:23.637] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:35.197] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2944 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:01:38.004] [TRACE] models/redis - 生成的验证码是：9511
+[2017-07-05 11:01:38.352] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:02:26.506] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2944 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:02:27.193] [TRACE] models/redis - 生成的验证码是：1425
+[2017-07-05 11:02:27.529] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:02:33.463] [TRACE] models/redis - 生成的验证码是：9472
+[2017-07-05 11:02:33.788] [TRACE] app - ::1 - - "GET /captcha? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:03:52.888] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:03:52.893] [TRACE] app - /admin Interceptored
+[2017-07-05 11:03:52.893] [TRACE] app - was signed in
+[2017-07-05 11:03:53.242] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 3459 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:03:54.940] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:04:33.536] [TRACE] app - ::1 - - "GET /pass.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:04:35.195] [TRACE] app - ::1 - - "GET /page.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:04:37.362] [TRACE] app - ::1 - - "GET /adv.html HTTP/1.1" 404 97 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:04:38.713] [TRACE] app - ::1 - - "GET /book.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:04:40.031] [TRACE] app - ::1 - - "GET /column.html HTTP/1.1" 404 100 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:04:40.853] [TRACE] app - ::1 - - "GET /book.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:04:42.508] [TRACE] app - ::1 - - "GET /page.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:09.468] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:10.423] [TRACE] app - ::1 - - "GET /pass.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:11.663] [TRACE] app - ::1 - - "GET /book.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:14.191] [TRACE] app - ::1 - - "GET /column.html HTTP/1.1" 404 100 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:15.058] [TRACE] app - ::1 - - "GET /book.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:16.016] [TRACE] app - ::1 - - "GET /adv.html HTTP/1.1" 404 97 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:16.921] [TRACE] app - ::1 - - "GET /page.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:17.783] [TRACE] app - ::1 - - "GET /pass.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:18.716] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:19.516] [TRACE] app - ::1 - - "GET /pass.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:20.378] [TRACE] app - ::1 - - "GET /page.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:21.466] [TRACE] app - ::1 - - "GET /adv.html HTTP/1.1" 404 97 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:23.046] [TRACE] app - ::1 - - "GET /adv.html HTTP/1.1" 404 97 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:23.395] [TRACE] app - ::1 - - "GET /book.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:24.201] [TRACE] app - ::1 - - "GET /column.html HTTP/1.1" 404 100 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:25.277] [TRACE] app - ::1 - - "GET /book.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:25.851] [TRACE] app - ::1 - - "GET /adv.html HTTP/1.1" 404 97 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:26.364] [TRACE] app - ::1 - - "GET /page.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:27.104] [TRACE] app - ::1 - - "GET /pass.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:05:27.514] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:08:54.518] [TRACE] app - /admin Interceptored
+[2017-07-05 11:08:54.518] [TRACE] app - was signed in
+[2017-07-05 11:08:54.750] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2849 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:08:55.421] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:09:11.413] [TRACE] app - /admin Interceptored
+[2017-07-05 11:09:11.414] [TRACE] app - was signed in
+[2017-07-05 11:09:11.763] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2769 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:09:13.700] [TRACE] app - /admin Interceptored
+[2017-07-05 11:09:13.700] [TRACE] app - was signed in
+[2017-07-05 11:09:14.582] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2769 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:09:16.917] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:09:45.024] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 11:09:45.024] [TRACE] app - was signed in
+[2017-07-05 11:09:45.899] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:09:46.306] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 11:09:46.306] [TRACE] app - was signed in
+[2017-07-05 11:09:48.229] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:09:48.627] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 11:09:48.627] [TRACE] app - was signed in
+[2017-07-05 11:09:48.928] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 11:09:48.928] [TRACE] app - was signed in
+[2017-07-05 11:09:49.911] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:09:50.663] [TRACE] app - /admin/order/list Interceptored
+[2017-07-05 11:09:50.663] [TRACE] app - was signed in
+[2017-07-05 11:09:54.798] [TRACE] app - ::1 - - "GET /admin/order/list HTTP/1.1" 404 105 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:09:55.155] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 11:09:55.157] [TRACE] app - was signed in
+[2017-07-05 11:09:55.159] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 11:09:55.159] [TRACE] app - was signed in
+[2017-07-05 11:09:56.224] [TRACE] app - ::1 - - "GET /%7B:U('Index/info')%7D HTTP/1.1" 404 119 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:09:57.803] [TRACE] app - ::1 - - "GET /%7B:U('Index/info')%7D HTTP/1.1" 404 119 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:09:58.721] [TRACE] app - ::1 - - "GET /%7B:U('Index/info')%7D HTTP/1.1" 404 119 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:10:33.460] [TRACE] app - /admin Interceptored
+[2017-07-05 11:10:33.460] [TRACE] app - was signed in
+[2017-07-05 11:10:33.806] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2652 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:10:36.164] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:10:48.226] [TRACE] app - /admin Interceptored
+[2017-07-05 11:10:48.226] [TRACE] app - was signed in
+[2017-07-05 11:10:48.550] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2652 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:10:50.240] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:11:23.784] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 11:11:23.784] [TRACE] app - was signed in
+[2017-07-05 11:11:24.074] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:11:24.698] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 11:11:24.699] [TRACE] app - was signed in
+[2017-07-05 11:11:25.008] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:11:27.650] [TRACE] app - /admin/order/list Interceptored
+[2017-07-05 11:11:27.650] [TRACE] app - was signed in
+[2017-07-05 11:11:27.994] [TRACE] app - ::1 - - "GET /admin/order/list HTTP/1.1" 404 105 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:11:35.036] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 11:11:35.036] [TRACE] app - was signed in
+[2017-07-05 11:11:35.381] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 11:11:35.381] [TRACE] app - was signed in
+[2017-07-05 11:11:35.725] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:17:13.716] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 11:17:13.716] [TRACE] app - was signed in
+[2017-07-05 11:17:14.607] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:17:17.664] [TRACE] app - /admin Interceptored
+[2017-07-05 11:17:17.664] [TRACE] app - was signed in
+[2017-07-05 11:17:18.011] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:17:36.337] [TRACE] app - /admin Interceptored
+[2017-07-05 11:17:36.337] [TRACE] app - was signed in
+[2017-07-05 11:17:36.685] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:17:38.451] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:18:01.873] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 11:18:01.873] [TRACE] app - was signed in
+[2017-07-05 11:18:02.219] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:18:06.223] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 11:18:06.223] [TRACE] app - was signed in
+[2017-07-05 11:18:06.568] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:20.976] [TRACE] app - /admin Interceptored
+[2017-07-05 11:22:20.990] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 302 68 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:20.999] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2879 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:21.036] [TRACE] models/redis - 生成的验证码是：2209
+[2017-07-05 11:22:21.041] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:27.083] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:27.090] [TRACE] app - /admin Interceptored
+[2017-07-05 11:22:27.090] [TRACE] app - was signed in
+[2017-07-05 11:22:27.094] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2652 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:27.160] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:32.043] [TRACE] app - /admin Interceptored
+[2017-07-05 11:22:32.044] [TRACE] app - was signed in
+[2017-07-05 11:22:32.047] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:32.105] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:32.816] [TRACE] app - /admin Interceptored
+[2017-07-05 11:22:32.816] [TRACE] app - was signed in
+[2017-07-05 11:22:32.821] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:32.875] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:34.624] [TRACE] app - /admin/logout Interceptored
+[2017-07-05 11:22:34.624] [TRACE] app - was signed in
+[2017-07-05 11:22:34.626] [TRACE] app - ::1 - - "GET /admin/logout HTTP/1.1" 302 68 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:34.634] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2879 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:34.677] [TRACE] models/redis - 生成的验证码是：1792
+[2017-07-05 11:22:34.678] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:37.369] [TRACE] app - /admin Interceptored
+[2017-07-05 11:22:37.371] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:37.385] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:37.422] [TRACE] models/redis - 生成的验证码是：1872
+[2017-07-05 11:22:37.425] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:40.003] [TRACE] models/redis - 生成的验证码是：2531
+[2017-07-05 11:22:40.005] [TRACE] app - ::1 - - "GET /captcha? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:40.468] [TRACE] models/redis - 生成的验证码是：1017
+[2017-07-05 11:22:40.469] [TRACE] app - ::1 - - "GET /captcha?? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:40.890] [TRACE] models/redis - 生成的验证码是：5620
+[2017-07-05 11:22:40.892] [TRACE] app - ::1 - - "GET /captcha??? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:41.276] [TRACE] models/redis - 生成的验证码是：6220
+[2017-07-05 11:22:41.277] [TRACE] app - ::1 - - "GET /captcha???? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:22:41.594] [TRACE] models/redis - 生成的验证码是：4057
+[2017-07-05 11:22:41.596] [TRACE] app - ::1 - - "GET /captcha????? HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:23:40.817] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:23:40.821] [TRACE] app - /admin Interceptored
+[2017-07-05 11:23:40.821] [TRACE] app - was signed in
+[2017-07-05 11:23:40.827] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2652 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:23:40.899] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 11:29:36.989] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 200 3565 "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 11:30:25.447] [TRACE] app - ::ffff:192.168.1.112 - - "GET /product HTTP/1.1" 304 - "http://192.168.1.124:6688/" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 11:30:43.553] [TRACE] app - ::ffff:192.168.1.112 - - "GET /order HTTP/1.1" 304 - "http://192.168.1.124:6688/product" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 11:31:27.124] [TRACE] app - ::ffff:192.168.1.112 - - "GET /address/add HTTP/1.1" 304 - "http://192.168.1.124:6688/order" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 11:31:35.374] [TRACE] app - ::ffff:192.168.1.112 - - "GET /address/add HTTP/1.1" 304 - "http://192.168.1.124:6688/order" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 11:31:53.555] [TRACE] app - ::ffff:192.168.1.112 - - "GET /order HTTP/1.1" 304 - "http://192.168.1.124:6688/product" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 11:31:57.279] [TRACE] app - ::ffff:192.168.1.112 - - "GET /address/add HTTP/1.1" 304 - "http://192.168.1.124:6688/order" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 11:32:41.488] [TRACE] app - ::ffff:192.168.1.112 - - "GET /product HTTP/1.1" 304 - "http://192.168.1.124:6688/" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 11:32:44.524] [TRACE] app - ::ffff:192.168.1.112 - - "GET /order HTTP/1.1" 304 - "http://192.168.1.124:6688/product" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 14:11:35.674] [TRACE] app - ::ffff:192.168.1.112 - - "GET /order HTTP/1.1" 304 - "http://192.168.1.124:6688/product" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 15:12:26.258] [TRACE] app - ::1 - - "GET / HTTP/1.1" 200 3565 "" "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1"
+[2017-07-05 17:25:30.909] [TRACE] app - /admin Interceptored
+[2017-07-05 17:25:30.953] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 302 68 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:25:31.005] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2879 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:25:31.092] [TRACE] models/redis - 生成的验证码是：8279
+[2017-07-05 17:25:31.093] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:25:38.688] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2944 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:25:38.720] [TRACE] models/redis - 生成的验证码是：8666
+[2017-07-05 17:25:38.722] [TRACE] app - ::1 - - "GET /captcha HTTP/1.1" 200 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:25:45.661] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:25:45.665] [TRACE] app - /admin Interceptored
+[2017-07-05 17:25:45.665] [TRACE] app - was signed in
+[2017-07-05 17:25:45.667] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2652 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:25:45.721] [TRACE] app - ::1 - - "GET /info.html HTTP/1.1" 404 98 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:02.579] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:26:02.580] [TRACE] app - was signed in
+[2017-07-05 17:26:02.582] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:03.572] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:03.573] [TRACE] app - was signed in
+[2017-07-05 17:26:03.575] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:04.564] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:26:04.565] [TRACE] app - was signed in
+[2017-07-05 17:26:04.567] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:05.491] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:05.491] [TRACE] app - was signed in
+[2017-07-05 17:26:05.495] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:06.059] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:26:06.059] [TRACE] app - was signed in
+[2017-07-05 17:26:06.062] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:06.554] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:06.555] [TRACE] app - was signed in
+[2017-07-05 17:26:06.558] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:06.987] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:26:06.987] [TRACE] app - was signed in
+[2017-07-05 17:26:06.990] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:07.389] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:07.389] [TRACE] app - was signed in
+[2017-07-05 17:26:07.393] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:07.891] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:26:07.891] [TRACE] app - was signed in
+[2017-07-05 17:26:07.894] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:08.394] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:08.395] [TRACE] app - was signed in
+[2017-07-05 17:26:08.398] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:08.771] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:26:08.771] [TRACE] app - was signed in
+[2017-07-05 17:26:08.774] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:09.251] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:09.251] [TRACE] app - was signed in
+[2017-07-05 17:26:09.254] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:10.269] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:26:10.269] [TRACE] app - was signed in
+[2017-07-05 17:26:10.272] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:11.363] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:11.364] [TRACE] app - was signed in
+[2017-07-05 17:26:11.367] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:12.411] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:26:12.411] [TRACE] app - was signed in
+[2017-07-05 17:26:12.414] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:13.138] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:13.138] [TRACE] app - was signed in
+[2017-07-05 17:26:13.141] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:13.579] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:26:13.579] [TRACE] app - was signed in
+[2017-07-05 17:26:13.583] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:14.203] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:14.204] [TRACE] app - was signed in
+[2017-07-05 17:26:14.206] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:29.451] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:29.451] [TRACE] app - was signed in
+[2017-07-05 17:26:29.456] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:29.715] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:29.715] [TRACE] app - was signed in
+[2017-07-05 17:26:29.718] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:29.947] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:29.947] [TRACE] app - was signed in
+[2017-07-05 17:26:29.950] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:30.147] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:30.147] [TRACE] app - was signed in
+[2017-07-05 17:26:30.152] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:30.366] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:30.366] [TRACE] app - was signed in
+[2017-07-05 17:26:30.374] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:30.548] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:26:30.548] [TRACE] app - was signed in
+[2017-07-05 17:26:30.551] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:45.283] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:26:45.283] [TRACE] app - was signed in
+[2017-07-05 17:26:45.285] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:26:46.876] [TRACE] app - /admin/order/list Interceptored
+[2017-07-05 17:26:46.876] [TRACE] app - was signed in
+[2017-07-05 17:26:46.879] [TRACE] app - ::1 - - "GET /admin/order/list HTTP/1.1" 404 105 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:27:03.595] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:27:03.595] [TRACE] app - was signed in
+[2017-07-05 17:27:03.600] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:27:04.332] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:27:04.333] [TRACE] app - was signed in
+[2017-07-05 17:27:04.335] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:27:04.987] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:27:04.987] [TRACE] app - was signed in
+[2017-07-05 17:27:04.990] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:27:05.419] [TRACE] app - /admin/product/add Interceptored
+[2017-07-05 17:27:05.419] [TRACE] app - was signed in
+[2017-07-05 17:27:05.421] [TRACE] app - ::1 - - "GET /admin/product/add HTTP/1.1" 404 106 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:27:05.779] [TRACE] app - /admin/product/list Interceptored
+[2017-07-05 17:27:05.779] [TRACE] app - was signed in
+[2017-07-05 17:27:05.782] [TRACE] app - ::1 - - "GET /admin/product/list HTTP/1.1" 404 107 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:32:14.730] [TRACE] app - ::ffff:192.168.1.112 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 17:32:21.024] [TRACE] app - ::ffff:192.168.1.112 - - "GET /product HTTP/1.1" 304 - "http://192.168.1.124:6688/" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 17:32:35.678] [TRACE] app - ::ffff:192.168.1.112 - - "GET /order HTTP/1.1" 304 - "http://192.168.1.124:6688/product" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 17:32:49.065] [TRACE] app - ::ffff:192.168.1.112 - - "GET /address/add HTTP/1.1" 304 - "http://192.168.1.124:6688/order" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 17:33:02.228] [TRACE] app - ::ffff:192.168.1.112 - - "GET /address/add HTTP/1.1" 304 - "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 17:33:10.088] [TRACE] app - ::ffff:192.168.1.112 - - "GET /address/add HTTP/1.1" 304 - "http://192.168.1.124:6688/order" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 17:34:48.671] [TRACE] app - ::ffff:192.168.1.112 - - "GET /product HTTP/1.1" 304 - "http://192.168.1.124:6688/" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-05 17:36:41.444] [TRACE] app - /admin Interceptored
+[2017-07-05 17:36:41.444] [TRACE] app - was signed in
+[2017-07-05 17:36:41.450] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 1832 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:37:10.315] [TRACE] app - /admin Interceptored
+[2017-07-05 17:37:10.315] [TRACE] app - was signed in
+[2017-07-05 17:37:10.317] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 1841 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:37:29.308] [TRACE] app - /admin Interceptored
+[2017-07-05 17:37:29.309] [TRACE] app - was signed in
+[2017-07-05 17:37:29.323] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 1997 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:37:30.504] [TRACE] app - /admin Interceptored
+[2017-07-05 17:37:30.505] [TRACE] app - was signed in
+[2017-07-05 17:37:30.508] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:37:31.325] [TRACE] app - /admin Interceptored
+[2017-07-05 17:37:31.325] [TRACE] app - was signed in
+[2017-07-05 17:37:31.327] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:37:45.683] [TRACE] app - /admin Interceptored
+[2017-07-05 17:37:45.683] [TRACE] app - was signed in
+[2017-07-05 17:37:45.685] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 1996 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:37:55.556] [TRACE] app - /admin Interceptored
+[2017-07-05 17:37:55.557] [TRACE] app - was signed in
+[2017-07-05 17:37:55.559] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 1978 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:58:41.713] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2329 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-05 17:58:49.218] [TRACE] app - ::1 - - "GET /admin/a HTTP/1.1" 200 2329 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 10:58:29.489] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2375 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 10:58:46.091] [TRACE] util/dbm - create database connection
+[2017-07-06 10:59:17.180] [TRACE] util/dbm - TypeError: Log.error is not a function
+    at d:\money\store\src\controller\admin.js:31:9
+    at Query._callback (d:\money\store\src\util\dbm.js:36:13)
+    at Query.Sequence.end (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:226:14
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[2017-07-06 10:59:17.204] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 500 170 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 10:59:33.204] [TRACE] util/dbm - create database connection
+[2017-07-06 11:00:04.894] [TRACE] util/dbm - create database connection
+[2017-07-06 11:00:36.571] [TRACE] util/dbm - create database connection
+[2017-07-06 11:01:08.292] [TRACE] util/dbm - create database connection
+[2017-07-06 11:01:40.183] [TRACE] util/dbm - create database connection
+[2017-07-06 11:04:39.918] [ERROR] controller/admin - { Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:199:16)
+    at Protocol._enqueue (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:135:13)
+    at Connection.query (D:\money\store\src\node_modules\.2.13.0@mysql\lib\Connection.js:208:25)
+    at d:\money\store\src\util\dbm.js:33:9
+    at dispense (D:\money\store\src\node_modules\.2.0.4@generic-pool\lib\generic-pool.js:247:16)
+    at Object.exports.Pool.me.acquire (D:\money\store\src\node_modules\.2.0.4@generic-pool\lib\generic-pool.js:316:5)
+    at Object.pool.query (d:\money\store\src\util\dbm.js:32:8)
+    at Object.exports.query (d:\money\store\src\util\dbm.js:48:7)
+    at Object.exports.getAdminLogin_name (d:\money\store\src\proxy\setting.js:11:6)
+    at exports.login (d:\money\store\src\controller\admin.js:29:17) code: 'PROTOCOL_ENQUEUE_AFTER_FATAL_ERROR', fatal: false }
+[2017-07-06 11:04:39.931] [ERROR] app - Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:730:10)
+    at ServerResponse.send (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:170:12)
+    at done (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:967:10)
+    at tryHandleCache (D:\money\store\src\node_modules\.2.5.6@ejs\lib\ejs.js:208:10)
+    at View.exports.renderFile [as engine] (D:\money\store\src\node_modules\.2.5.6@ejs\lib\ejs.js:412:10)
+    at View.render (D:\money\store\src\node_modules\.4.15.3@express\lib\view.js:128:8)
+    at tryRender (D:\money\store\src\node_modules\.4.15.3@express\lib\application.js:640:10)
+    at EventEmitter.render (D:\money\store\src\node_modules\.4.15.3@express\lib\application.js:592:3)
+    at ServerResponse.render (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:971:7)
+[2017-07-06 11:04:39.935] [TRACE] util/dbm - create database connection
+[2017-07-06 11:05:19.312] [TRACE] util/dbm - create database connection
+[2017-07-06 11:05:53.385] [TRACE] util/dbm - create database connection
+[2017-07-06 11:06:27.306] [TRACE] util/dbm - create database connection
+[2017-07-06 11:06:59.289] [TRACE] util/dbm - create database connection
+[2017-07-06 11:07:31.212] [TRACE] util/dbm - create database connection
+[2017-07-06 11:08:02.939] [TRACE] util/dbm - create database connection
+[2017-07-06 11:08:36.880] [TRACE] util/dbm - create database connection
+[2017-07-06 11:09:16.894] [TRACE] util/dbm - create database connection
+[2017-07-06 11:09:48.719] [TRACE] util/dbm - create database connection
+[2017-07-06 11:10:25.721] [TRACE] util/dbm - create database connection
+[2017-07-06 11:24:57.482] [TRACE] util/dbm - create database connection
+[2017-07-06 11:25:29.522] [TRACE] util/dbm - create database connection
+[2017-07-06 11:40:35.723] [TRACE] util/dbm - create database connection
+[2017-07-06 11:41:09.404] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 500 170 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:43:02.360] [INFO] util/dbm - authenticated
+[2017-07-06 11:43:23.950] [INFO] util/dbm - authenticated
+[2017-07-06 11:43:53.970] [TRACE] util/dbm - create database connection
+[2017-07-06 11:44:07.148] [TRACE] util/dbm - create database connection
+[2017-07-06 11:44:07.189] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 500 170 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:44:07.555] [INFO] util/dbm - disconnected
+[2017-07-06 11:44:21.319] [ERROR] controller/admin - { Error: Cannot enqueue Query after fatal error.
+    at Protocol._validateEnqueue (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:199:16)
+    at Protocol._enqueue (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:135:13)
+    at Connection.query (D:\money\store\src\node_modules\.2.13.0@mysql\lib\Connection.js:208:25)
+    at d:\money\store\src\util\dbm.js:34:9
+    at d:\money\store\src\node_modules\generic-pool\lib\generic-pool.js:278:11
+    at Handshake._callback (d:\money\store\src\util\dbm.js:19:12)
+    at Handshake.Sequence.end (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Protocol.handleNetworkError (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:364:14)
+    at Connection._handleNetworkError (D:\money\store\src\node_modules\.2.13.0@mysql\lib\Connection.js:428:18)
+    at emitOne (events.js:96:13) code: 'PROTOCOL_ENQUEUE_AFTER_FATAL_ERROR', fatal: false }
+[2017-07-06 11:44:21.331] [ERROR] app - Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:730:10)
+    at ServerResponse.send (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:170:12)
+    at done (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:967:10)
+    at tryHandleCache (D:\money\store\src\node_modules\.2.5.6@ejs\lib\ejs.js:208:10)
+    at View.exports.renderFile [as engine] (D:\money\store\src\node_modules\.2.5.6@ejs\lib\ejs.js:412:10)
+    at View.render (D:\money\store\src\node_modules\.4.15.3@express\lib\view.js:128:8)
+    at tryRender (D:\money\store\src\node_modules\.4.15.3@express\lib\application.js:640:10)
+    at EventEmitter.render (D:\money\store\src\node_modules\.4.15.3@express\lib\application.js:592:3)
+    at ServerResponse.render (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:971:7)
+[2017-07-06 11:44:21.338] [INFO] util/dbm - disconnected
+[2017-07-06 11:44:44.631] [INFO] util/dbm - authenticated
+[2017-07-06 11:44:54.444] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 500 170 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:46:02.568] [TRACE] util/dbm - create database connection
+[2017-07-06 11:46:03.143] [INFO] util/dbm - authenticated
+[2017-07-06 11:46:24.273] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 500 170 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:46:27.216] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 500 170 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:46:58.220] [TRACE] util/dbm - create database connection
+[2017-07-06 11:47:00.765] [INFO] util/dbm - authenticated
+[2017-07-06 11:47:26.515] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 500 171 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:47:45.330] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2375 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:47:55.457] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 500 171 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:47:56.517] [TRACE] util/dbm - Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:730:10)
+    at ServerResponse.location (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:847:15)
+    at ServerResponse.redirect (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:885:18)
+    at d:\money\store\src\controller\admin.js:44:20
+    at Query._callback (d:\money\store\src\util\dbm.js:37:13)
+    at Query.Sequence.end (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query._handleFinalResultPacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Query.js:137:8)
+    at Query.EofPacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Query.js:121:8)
+    at Protocol._parsePacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:280:23)
+[2017-07-06 11:48:20.437] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 500 171 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:48:20.900] [TRACE] util/dbm - Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:730:10)
+    at ServerResponse.location (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:847:15)
+    at ServerResponse.redirect (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:885:18)
+    at d:\money\store\src\controller\admin.js:44:20
+    at Query._callback (d:\money\store\src\util\dbm.js:37:13)
+    at Query.Sequence.end (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query._handleFinalResultPacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Query.js:137:8)
+    at Query.EofPacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Query.js:121:8)
+    at Protocol._parsePacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:280:23)
+[2017-07-06 11:48:26.203] [INFO] util/dbm - authenticated
+[2017-07-06 11:48:29.772] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 200 2425 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:48:30.285] [TRACE] util/dbm - Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:730:10)
+    at ServerResponse.location (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:847:15)
+    at ServerResponse.redirect (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:885:18)
+    at d:\money\store\src\controller\admin.js:44:20
+    at Query._callback (d:\money\store\src\util\dbm.js:37:13)
+    at Query.Sequence.end (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query._handleFinalResultPacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Query.js:137:8)
+    at Query.EofPacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Query.js:121:8)
+    at Protocol._parsePacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:280:23)
+[2017-07-06 11:49:09.585] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 200 2425 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:49:50.130] [TRACE] util/dbm - Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:730:10)
+    at ServerResponse.location (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:847:15)
+    at ServerResponse.redirect (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:885:18)
+    at d:\money\store\src\controller\admin.js:44:20
+    at Query._callback (d:\money\store\src\util\dbm.js:37:13)
+    at Query.Sequence.end (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query._handleFinalResultPacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Query.js:137:8)
+    at Query.EofPacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Query.js:121:8)
+    at Protocol._parsePacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:280:23)
+[2017-07-06 11:49:50.138] [TRACE] util/dbm - create database connection
+[2017-07-06 11:49:50.838] [INFO] util/dbm - authenticated
+[2017-07-06 11:50:07.802] [INFO] util/dbm - authenticated
+[2017-07-06 11:50:17.280] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 200 2425 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 11:50:22.448] [TRACE] util/dbm - Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:730:10)
+    at ServerResponse.location (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:847:15)
+    at ServerResponse.redirect (D:\money\store\src\node_modules\.4.15.3@express\lib\response.js:885:18)
+    at d:\money\store\src\controller\admin.js:44:20
+    at Query._callback (d:\money\store\src\util\dbm.js:37:13)
+    at Query.Sequence.end (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query._handleFinalResultPacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Query.js:137:8)
+    at Query.EofPacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Query.js:121:8)
+    at Protocol._parsePacket (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:280:23)
+[2017-07-06 11:50:51.478] [TRACE] util/dbm - create database connection
+[2017-07-06 11:50:52.180] [INFO] util/dbm - authenticated
+[2017-07-06 11:51:22.200] [TRACE] util/dbm - create database connection
+[2017-07-06 11:51:23.037] [INFO] util/dbm - authenticated
+[2017-07-06 11:51:53.054] [TRACE] util/dbm - create database connection
+[2017-07-06 11:51:53.744] [INFO] util/dbm - authenticated
+[2017-07-06 11:52:23.763] [TRACE] util/dbm - create database connection
+[2017-07-06 11:52:24.399] [INFO] util/dbm - authenticated
+[2017-07-06 11:52:54.419] [TRACE] util/dbm - create database connection
+[2017-07-06 11:52:55.332] [INFO] util/dbm - authenticated
+[2017-07-06 11:53:25.344] [TRACE] util/dbm - create database connection
+[2017-07-06 11:53:26.115] [INFO] util/dbm - authenticated
+[2017-07-06 11:53:56.129] [TRACE] util/dbm - create database connection
+[2017-07-06 11:53:56.952] [INFO] util/dbm - authenticated
+[2017-07-06 11:54:26.966] [TRACE] util/dbm - create database connection
+[2017-07-06 11:54:27.618] [INFO] util/dbm - authenticated
+[2017-07-06 11:54:57.634] [TRACE] util/dbm - create database connection
+[2017-07-06 11:54:58.289] [INFO] util/dbm - authenticated
+[2017-07-06 11:55:28.304] [TRACE] util/dbm - create database connection
+[2017-07-06 11:55:29.024] [INFO] util/dbm - authenticated
+[2017-07-06 11:55:59.034] [TRACE] util/dbm - create database connection
+[2017-07-06 11:55:59.772] [INFO] util/dbm - authenticated
+[2017-07-06 11:56:29.785] [TRACE] util/dbm - create database connection
+[2017-07-06 11:56:30.522] [INFO] util/dbm - authenticated
+[2017-07-06 11:57:00.534] [TRACE] util/dbm - create database connection
+[2017-07-06 11:57:01.271] [INFO] util/dbm - authenticated
+[2017-07-06 11:57:31.288] [TRACE] util/dbm - create database connection
+[2017-07-06 11:57:32.016] [INFO] util/dbm - authenticated
+[2017-07-06 11:58:02.032] [TRACE] util/dbm - create database connection
+[2017-07-06 11:58:02.696] [INFO] util/dbm - authenticated
+[2017-07-06 11:58:32.713] [TRACE] util/dbm - create database connection
+[2017-07-06 11:58:33.449] [INFO] util/dbm - authenticated
+[2017-07-06 11:59:03.465] [TRACE] util/dbm - create database connection
+[2017-07-06 11:59:04.267] [INFO] util/dbm - authenticated
+[2017-07-06 11:59:34.282] [TRACE] util/dbm - create database connection
+[2017-07-06 11:59:35.083] [INFO] util/dbm - authenticated
+[2017-07-06 12:00:05.103] [TRACE] util/dbm - create database connection
+[2017-07-06 12:00:05.870] [INFO] util/dbm - authenticated
+[2017-07-06 12:00:35.884] [TRACE] util/dbm - create database connection
+[2017-07-06 12:00:36.668] [INFO] util/dbm - authenticated
+[2017-07-06 12:01:06.684] [TRACE] util/dbm - create database connection
+[2017-07-06 12:01:07.421] [INFO] util/dbm - authenticated
+[2017-07-06 12:01:37.436] [TRACE] util/dbm - create database connection
+[2017-07-06 12:01:38.155] [INFO] util/dbm - authenticated
+[2017-07-06 12:02:08.170] [TRACE] util/dbm - create database connection
+[2017-07-06 12:02:09.040] [INFO] util/dbm - authenticated
+[2017-07-06 12:02:39.052] [TRACE] util/dbm - create database connection
+[2017-07-06 12:02:39.995] [INFO] util/dbm - authenticated
+[2017-07-06 12:03:10.009] [TRACE] util/dbm - create database connection
+[2017-07-06 12:03:10.618] [INFO] util/dbm - authenticated
+[2017-07-06 12:03:40.633] [TRACE] util/dbm - create database connection
+[2017-07-06 12:03:41.333] [INFO] util/dbm - authenticated
+[2017-07-06 12:04:11.349] [TRACE] util/dbm - create database connection
+[2017-07-06 12:04:12.007] [INFO] util/dbm - authenticated
+[2017-07-06 12:04:42.026] [TRACE] util/dbm - create database connection
+[2017-07-06 12:04:43.038] [INFO] util/dbm - authenticated
+[2017-07-06 12:05:13.051] [TRACE] util/dbm - create database connection
+[2017-07-06 12:05:13.774] [INFO] util/dbm - authenticated
+[2017-07-06 12:05:43.789] [TRACE] util/dbm - create database connection
+[2017-07-06 12:05:44.507] [INFO] util/dbm - authenticated
+[2017-07-06 12:06:14.520] [TRACE] util/dbm - create database connection
+[2017-07-06 12:06:15.971] [INFO] util/dbm - authenticated
+[2017-07-06 12:06:45.988] [TRACE] util/dbm - create database connection
+[2017-07-06 12:06:46.720] [INFO] util/dbm - authenticated
+[2017-07-06 12:07:16.736] [TRACE] util/dbm - create database connection
+[2017-07-06 12:07:18.201] [INFO] util/dbm - authenticated
+[2017-07-06 12:07:48.217] [TRACE] util/dbm - create database connection
+[2017-07-06 12:07:48.905] [INFO] util/dbm - authenticated
+[2017-07-06 12:08:18.917] [TRACE] util/dbm - create database connection
+[2017-07-06 12:08:19.650] [INFO] util/dbm - authenticated
+[2017-07-06 12:08:49.662] [TRACE] util/dbm - create database connection
+[2017-07-06 12:08:51.170] [INFO] util/dbm - authenticated
+[2017-07-06 12:09:21.186] [TRACE] util/dbm - create database connection
+[2017-07-06 12:09:22.938] [INFO] util/dbm - authenticated
+[2017-07-06 12:09:52.954] [TRACE] util/dbm - create database connection
+[2017-07-06 12:09:53.705] [INFO] util/dbm - authenticated
+[2017-07-06 12:10:23.725] [TRACE] util/dbm - create database connection
+[2017-07-06 12:10:24.373] [INFO] util/dbm - authenticated
+[2017-07-06 12:10:54.386] [TRACE] util/dbm - create database connection
+[2017-07-06 12:10:55.113] [INFO] util/dbm - authenticated
+[2017-07-06 12:11:25.127] [TRACE] util/dbm - create database connection
+[2017-07-06 12:11:25.902] [INFO] util/dbm - authenticated
+[2017-07-06 12:11:55.919] [TRACE] util/dbm - create database connection
+[2017-07-06 12:11:56.631] [INFO] util/dbm - authenticated
+[2017-07-06 12:12:26.642] [TRACE] util/dbm - create database connection
+[2017-07-06 12:12:27.358] [INFO] util/dbm - authenticated
+[2017-07-06 12:12:57.369] [TRACE] util/dbm - create database connection
+[2017-07-06 12:12:58.091] [INFO] util/dbm - authenticated
+[2017-07-06 12:13:28.109] [TRACE] util/dbm - create database connection
+[2017-07-06 12:13:28.967] [INFO] util/dbm - authenticated
+[2017-07-06 12:13:58.979] [TRACE] util/dbm - create database connection
+[2017-07-06 12:14:00.024] [INFO] util/dbm - authenticated
+[2017-07-06 12:14:30.036] [TRACE] util/dbm - create database connection
+[2017-07-06 12:14:30.985] [INFO] util/dbm - authenticated
+[2017-07-06 12:15:01.003] [TRACE] util/dbm - create database connection
+[2017-07-06 12:15:01.724] [INFO] util/dbm - authenticated
+[2017-07-06 12:15:31.735] [TRACE] util/dbm - create database connection
+[2017-07-06 12:15:32.550] [INFO] util/dbm - authenticated
+[2017-07-06 12:16:02.565] [TRACE] util/dbm - create database connection
+[2017-07-06 12:16:03.253] [INFO] util/dbm - authenticated
+[2017-07-06 12:16:33.268] [TRACE] util/dbm - create database connection
+[2017-07-06 12:16:33.992] [INFO] util/dbm - authenticated
+[2017-07-06 12:17:04.005] [TRACE] util/dbm - create database connection
+[2017-07-06 12:17:04.699] [INFO] util/dbm - authenticated
+[2017-07-06 12:17:34.719] [TRACE] util/dbm - create database connection
+[2017-07-06 12:17:35.740] [INFO] util/dbm - authenticated
+[2017-07-06 12:18:05.754] [TRACE] util/dbm - create database connection
+[2017-07-06 12:18:06.619] [INFO] util/dbm - authenticated
+[2017-07-06 12:18:36.633] [TRACE] util/dbm - create database connection
+[2017-07-06 12:18:37.619] [INFO] util/dbm - authenticated
+[2017-07-06 12:19:07.634] [TRACE] util/dbm - create database connection
+[2017-07-06 12:19:08.377] [INFO] util/dbm - authenticated
+[2017-07-06 12:19:38.396] [TRACE] util/dbm - create database connection
+[2017-07-06 12:19:39.259] [INFO] util/dbm - authenticated
+[2017-07-06 12:20:53.046] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 200 2425 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:27:12.577] [TRACE] util/dbm - create database connection
+[2017-07-06 12:27:12.585] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 200 2425 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:27:14.569] [INFO] util/dbm - authenticated
+[2017-07-06 12:27:27.319] [INFO] util/dbm - authenticated
+[2017-07-06 12:28:09.736] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:23.346] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 1982 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:26.349] [TRACE] util/dbm - create database connection
+[2017-07-06 12:28:27.079] [INFO] util/dbm - authenticated
+[2017-07-06 12:28:37.542] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:40.562] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:41.957] [TRACE] app - ::1 - - "GET /admin/logout HTTP/1.1" 302 68 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:41.963] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2375 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:48.297] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:48.308] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:51.120] [TRACE] app - ::1 - - "GET /admin/logout HTTP/1.1" 302 68 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:51.127] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2375 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:54.122] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2375 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:56.171] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:28:56.178] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 1982 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:29:08.497] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 8340 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:29:26.275] [TRACE] util/dbm - create database connection
+[2017-07-06 12:29:26.970] [INFO] util/dbm - authenticated
+[2017-07-06 12:29:57.073] [TRACE] util/dbm - create database connection
+[2017-07-06 12:29:58.132] [INFO] util/dbm - authenticated
+[2017-07-06 12:30:28.363] [TRACE] util/dbm - create database connection
+[2017-07-06 12:30:29.406] [INFO] util/dbm - authenticated
+[2017-07-06 12:30:59.603] [TRACE] util/dbm - create database connection
+[2017-07-06 12:31:00.664] [INFO] util/dbm - authenticated
+[2017-07-06 12:31:30.911] [TRACE] util/dbm - create database connection
+[2017-07-06 12:31:31.771] [INFO] util/dbm - authenticated
+[2017-07-06 12:32:01.978] [TRACE] util/dbm - create database connection
+[2017-07-06 12:32:03.038] [INFO] util/dbm - authenticated
+[2017-07-06 12:32:33.081] [TRACE] util/dbm - create database connection
+[2017-07-06 12:32:37.178] [INFO] util/dbm - authenticated
+[2017-07-06 12:32:55.292] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 304 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:33:04.888] [TRACE] app - ::1 - - "GET /admin/logout HTTP/1.1" 302 68 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:33:04.896] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2375 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:33:07.906] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:33:07.911] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:33:24.902] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 304 - "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 12:33:38.745] [TRACE] util/dbm - create database connection
+[2017-07-06 12:33:39.463] [INFO] util/dbm - authenticated
+[2017-07-06 12:34:03.447] [TRACE] app - ::ffff:192.168.1.148 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-06 12:34:05.241] [TRACE] app - ::ffff:192.168.1.148 - - "GET /product HTTP/1.1" 304 - "http://192.168.1.124:6688/" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-06 12:34:09.744] [TRACE] util/dbm - create database connection
+[2017-07-06 12:34:10.393] [INFO] util/dbm - authenticated
+[2017-07-06 12:34:40.416] [TRACE] util/dbm - create database connection
+[2017-07-06 12:34:41.472] [INFO] util/dbm - authenticated
+[2017-07-06 12:35:11.728] [TRACE] util/dbm - create database connection
+[2017-07-06 12:35:12.381] [INFO] util/dbm - authenticated
+[2017-07-06 12:35:15.275] [TRACE] app - ::ffff:192.168.1.148 - - "GET /order HTTP/1.1" 304 - "http://192.168.1.124:6688/product" "Mozilla/5.0 (Linux; Android 6.0; MZ-MX6 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/45.0.2454.94 Mobile Safari/537.36"
+[2017-07-06 12:35:42.509] [TRACE] util/dbm - create database connection
+[2017-07-06 12:35:44.571] [INFO] util/dbm - authenticated
+[2017-07-06 12:36:14.790] [TRACE] util/dbm - create database connection
+[2017-07-06 12:36:15.517] [INFO] util/dbm - authenticated
+[2017-07-06 12:36:45.782] [TRACE] util/dbm - create database connection
+[2017-07-06 12:36:46.594] [INFO] util/dbm - authenticated
+[2017-07-06 12:37:16.865] [TRACE] util/dbm - create database connection
+[2017-07-06 12:37:17.584] [INFO] util/dbm - authenticated
+[2017-07-06 12:37:47.848] [TRACE] util/dbm - create database connection
+[2017-07-06 12:37:48.939] [INFO] util/dbm - authenticated
+[2017-07-06 12:38:19.068] [TRACE] util/dbm - create database connection
+[2017-07-06 12:38:30.090] [INFO] util/dbm - authenticated
+[2017-07-06 12:39:00.226] [TRACE] util/dbm - create database connection
+[2017-07-06 12:39:01.110] [INFO] util/dbm - authenticated
+[2017-07-06 12:39:31.405] [TRACE] util/dbm - create database connection
+[2017-07-06 12:39:32.163] [INFO] util/dbm - authenticated
+[2017-07-06 12:40:02.406] [TRACE] util/dbm - create database connection
+[2017-07-06 12:40:03.100] [INFO] util/dbm - authenticated
+[2017-07-06 12:40:33.328] [TRACE] util/dbm - create database connection
+[2017-07-06 12:40:34.357] [INFO] util/dbm - authenticated
+[2017-07-06 12:41:04.447] [TRACE] util/dbm - create database connection
+[2017-07-06 12:41:05.535] [INFO] util/dbm - authenticated
+[2017-07-06 12:41:35.772] [TRACE] util/dbm - create database connection
+[2017-07-06 12:41:36.447] [INFO] util/dbm - authenticated
+[2017-07-06 12:42:06.697] [TRACE] util/dbm - create database connection
+[2017-07-06 12:42:07.762] [INFO] util/dbm - authenticated
+[2017-07-06 12:42:37.969] [TRACE] util/dbm - create database connection
+[2017-07-06 12:42:38.765] [INFO] util/dbm - authenticated
+[2017-07-06 12:43:09.001] [TRACE] util/dbm - create database connection
+[2017-07-06 12:43:09.719] [INFO] util/dbm - authenticated
+[2017-07-06 12:43:39.932] [TRACE] util/dbm - create database connection
+[2017-07-06 12:43:40.652] [INFO] util/dbm - authenticated
+[2017-07-06 12:44:10.898] [TRACE] util/dbm - create database connection
+[2017-07-06 12:44:11.869] [INFO] util/dbm - authenticated
+[2017-07-06 12:44:42.065] [TRACE] util/dbm - create database connection
+[2017-07-06 12:44:43.107] [INFO] util/dbm - authenticated
+[2017-07-06 12:45:13.300] [TRACE] util/dbm - create database connection
+[2017-07-06 12:45:14.014] [INFO] util/dbm - authenticated
+[2017-07-06 12:45:44.073] [TRACE] util/dbm - create database connection
+[2017-07-06 12:45:45.096] [INFO] util/dbm - authenticated
+[2017-07-06 12:46:15.298] [TRACE] util/dbm - create database connection
+[2017-07-06 12:46:16.273] [INFO] util/dbm - authenticated
+[2017-07-06 12:46:46.413] [TRACE] util/dbm - create database connection
+[2017-07-06 12:46:47.120] [INFO] util/dbm - authenticated
+[2017-07-06 12:47:17.307] [TRACE] util/dbm - create database connection
+[2017-07-06 12:47:17.931] [INFO] util/dbm - authenticated
+[2017-07-06 12:47:48.071] [TRACE] util/dbm - create database connection
+[2017-07-06 12:47:49.158] [INFO] util/dbm - authenticated
+[2017-07-06 12:48:19.380] [TRACE] util/dbm - create database connection
+[2017-07-06 12:48:20.091] [INFO] util/dbm - authenticated
+[2017-07-06 12:48:50.205] [TRACE] util/dbm - create database connection
+[2017-07-06 12:48:51.010] [INFO] util/dbm - authenticated
+[2017-07-06 12:49:21.076] [TRACE] util/dbm - create database connection
+[2017-07-06 12:49:22.148] [INFO] util/dbm - authenticated
+[2017-07-06 12:49:52.346] [TRACE] util/dbm - create database connection
+[2017-07-06 12:49:54.577] [INFO] util/dbm - authenticated
+[2017-07-06 12:50:24.775] [TRACE] util/dbm - create database connection
+[2017-07-06 12:50:30.228] [INFO] util/dbm - authenticated
+[2017-07-06 12:51:00.410] [TRACE] util/dbm - create database connection
+[2017-07-06 12:51:03.557] [INFO] util/dbm - authenticated
+[2017-07-06 12:51:33.699] [TRACE] util/dbm - create database connection
+[2017-07-06 12:52:21.303] [INFO] util/dbm - authenticated
+[2017-07-06 12:52:51.373] [TRACE] util/dbm - create database connection
+[2017-07-06 12:52:52.775] [INFO] util/dbm - authenticated
+[2017-07-06 12:53:26.653] [FATAL] app - { Error: Quit inactivity timeout
+    at Quit.<anonymous> (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:160:17)
+    at emitNone (events.js:86:13)
+    at Quit.emit (events.js:185:7)
+    at Quit._onTimeout (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Sequence.js:127:8)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+  code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+  fatal: true,
+  timeout: 30000 }
+[2017-07-06 12:53:26.664] [TRACE] util/dbm - create database connection
+[2017-07-06 12:53:28.751] [INFO] util/dbm - authenticated
+[2017-07-06 12:53:58.902] [TRACE] util/dbm - create database connection
+[2017-07-06 12:54:00.630] [INFO] util/dbm - authenticated
+[2017-07-06 12:54:30.768] [TRACE] util/dbm - create database connection
+[2017-07-06 12:54:38.815] [INFO] util/dbm - authenticated
+[2017-07-06 12:55:08.863] [TRACE] util/dbm - create database connection
+[2017-07-06 12:55:15.753] [INFO] util/dbm - authenticated
+[2017-07-06 12:55:45.770] [TRACE] util/dbm - create database connection
+[2017-07-06 12:55:46.821] [INFO] util/dbm - authenticated
+[2017-07-06 12:56:16.941] [TRACE] util/dbm - create database connection
+[2017-07-06 12:56:22.886] [INFO] util/dbm - authenticated
+[2017-07-06 12:56:53.062] [TRACE] util/dbm - create database connection
+[2017-07-06 12:56:55.273] [INFO] util/dbm - authenticated
+[2017-07-06 12:57:25.409] [TRACE] util/dbm - create database connection
+[2017-07-06 12:57:26.462] [INFO] util/dbm - authenticated
+[2017-07-06 12:57:56.602] [TRACE] util/dbm - create database connection
+[2017-07-06 12:58:01.749] [INFO] util/dbm - authenticated
+[2017-07-06 12:58:31.832] [TRACE] util/dbm - create database connection
+[2017-07-06 12:58:34.571] [INFO] util/dbm - authenticated
+[2017-07-06 12:59:04.649] [TRACE] util/dbm - create database connection
+[2017-07-06 12:59:17.552] [INFO] util/dbm - authenticated
+[2017-07-06 12:59:47.604] [TRACE] util/dbm - create database connection
+[2017-07-06 12:59:48.628] [INFO] util/dbm - authenticated
+[2017-07-06 13:00:18.721] [TRACE] util/dbm - create database connection
+[2017-07-06 13:00:19.822] [INFO] util/dbm - authenticated
+[2017-07-06 13:00:49.864] [TRACE] util/dbm - create database connection
+[2017-07-06 13:00:54.234] [INFO] util/dbm - authenticated
+[2017-07-06 13:01:24.279] [TRACE] util/dbm - create database connection
+[2017-07-06 13:01:26.338] [INFO] util/dbm - authenticated
+[2017-07-06 13:01:56.366] [TRACE] util/dbm - create database connection
+[2017-07-06 13:01:58.870] [INFO] util/dbm - authenticated
+[2017-07-06 13:02:28.899] [TRACE] util/dbm - create database connection
+[2017-07-06 13:02:29.766] [INFO] util/dbm - authenticated
+[2017-07-06 13:02:59.821] [TRACE] util/dbm - create database connection
+[2017-07-06 13:03:01.191] [INFO] util/dbm - authenticated
+[2017-07-06 13:03:31.233] [TRACE] util/dbm - create database connection
+[2017-07-06 13:03:31.869] [INFO] util/dbm - authenticated
+[2017-07-06 13:04:01.907] [TRACE] util/dbm - create database connection
+[2017-07-06 13:04:02.935] [INFO] util/dbm - authenticated
+[2017-07-06 13:04:32.974] [TRACE] util/dbm - create database connection
+[2017-07-06 13:04:33.909] [INFO] util/dbm - authenticated
+[2017-07-06 13:05:03.972] [TRACE] util/dbm - create database connection
+[2017-07-06 13:05:04.953] [INFO] util/dbm - authenticated
+[2017-07-06 13:05:35.070] [TRACE] util/dbm - create database connection
+[2017-07-06 13:05:36.189] [INFO] util/dbm - authenticated
+[2017-07-06 13:06:06.281] [TRACE] util/dbm - create database connection
+[2017-07-06 13:06:09.810] [INFO] util/dbm - authenticated
+[2017-07-06 13:06:18.466] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2375 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:06:20.516] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 500 107 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:06:41.171] [INFO] util/dbm - authenticated
+[2017-07-06 13:06:45.832] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:06:45.843] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:06:57.957] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 8340 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:06:58.985] [TRACE] app - ::1 - - "GET /admin/logout HTTP/1.1" 302 68 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:06:58.993] [TRACE] app - ::1 - - "GET /admin/login HTTP/1.1" 200 2375 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:07:02.093] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2437 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:07:10.759] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 422 2437 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:07:40.813] [TRACE] util/dbm - create database connection
+[2017-07-06 13:07:41.855] [INFO] util/dbm - authenticated
+[2017-07-06 13:08:11.893] [TRACE] util/dbm - create database connection
+[2017-07-06 13:08:12.535] [INFO] util/dbm - authenticated
+[2017-07-06 13:08:40.432] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:08:40.439] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:08:42.012] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 304 - "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:09:10.727] [TRACE] util/dbm - create database connection
+[2017-07-06 13:09:11.759] [INFO] util/dbm - authenticated
+[2017-07-06 13:09:41.993] [TRACE] util/dbm - create database connection
+[2017-07-06 13:09:43.040] [INFO] util/dbm - authenticated
+[2017-07-06 13:10:13.093] [TRACE] util/dbm - create database connection
+[2017-07-06 13:10:14.184] [INFO] util/dbm - authenticated
+[2017-07-06 13:10:44.409] [TRACE] util/dbm - create database connection
+[2017-07-06 13:10:45.346] [INFO] util/dbm - authenticated
+[2017-07-06 13:11:15.414] [TRACE] util/dbm - create database connection
+[2017-07-06 13:11:16.463] [INFO] util/dbm - authenticated
+[2017-07-06 13:11:46.713] [TRACE] util/dbm - create database connection
+[2017-07-06 13:11:47.843] [INFO] util/dbm - authenticated
+[2017-07-06 13:12:18.061] [TRACE] util/dbm - create database connection
+[2017-07-06 13:12:18.901] [INFO] util/dbm - authenticated
+[2017-07-06 13:12:49.070] [TRACE] util/dbm - create database connection
+[2017-07-06 13:12:51.011] [INFO] util/dbm - authenticated
+[2017-07-06 13:13:21.077] [TRACE] util/dbm - create database connection
+[2017-07-06 13:13:22.098] [INFO] util/dbm - authenticated
+[2017-07-06 13:13:52.278] [TRACE] util/dbm - create database connection
+[2017-07-06 13:13:53.361] [INFO] util/dbm - authenticated
+[2017-07-06 13:14:23.416] [TRACE] util/dbm - create database connection
+[2017-07-06 13:14:24.415] [INFO] util/dbm - authenticated
+[2017-07-06 13:14:54.666] [TRACE] util/dbm - create database connection
+[2017-07-06 13:14:55.759] [INFO] util/dbm - authenticated
+[2017-07-06 13:15:26.025] [TRACE] util/dbm - create database connection
+[2017-07-06 13:15:27.040] [INFO] util/dbm - authenticated
+[2017-07-06 13:15:57.089] [TRACE] util/dbm - create database connection
+[2017-07-06 13:15:57.917] [INFO] util/dbm - authenticated
+[2017-07-06 13:16:28.074] [TRACE] util/dbm - create database connection
+[2017-07-06 13:16:28.885] [INFO] util/dbm - authenticated
+[2017-07-06 13:16:59.070] [TRACE] util/dbm - create database connection
+[2017-07-06 13:16:59.805] [INFO] util/dbm - authenticated
+[2017-07-06 13:17:30.066] [TRACE] util/dbm - create database connection
+[2017-07-06 13:17:31.107] [INFO] util/dbm - authenticated
+[2017-07-06 13:18:01.288] [TRACE] util/dbm - create database connection
+[2017-07-06 13:18:02.431] [INFO] util/dbm - authenticated
+[2017-07-06 13:18:32.650] [TRACE] util/dbm - create database connection
+[2017-07-06 13:18:33.540] [INFO] util/dbm - authenticated
+[2017-07-06 13:19:03.758] [TRACE] util/dbm - create database connection
+[2017-07-06 13:19:04.494] [INFO] util/dbm - authenticated
+[2017-07-06 13:19:34.697] [TRACE] util/dbm - create database connection
+[2017-07-06 13:19:35.540] [INFO] util/dbm - authenticated
+[2017-07-06 13:20:05.728] [TRACE] util/dbm - create database connection
+[2017-07-06 13:20:06.335] [INFO] util/dbm - authenticated
+[2017-07-06 13:20:36.413] [TRACE] util/dbm - create database connection
+[2017-07-06 13:20:37.105] [INFO] util/dbm - authenticated
+[2017-07-06 13:21:07.348] [TRACE] util/dbm - create database connection
+[2017-07-06 13:21:08.353] [INFO] util/dbm - authenticated
+[2017-07-06 13:21:38.446] [TRACE] util/dbm - create database connection
+[2017-07-06 13:21:39.678] [INFO] util/dbm - authenticated
+[2017-07-06 13:22:09.917] [TRACE] util/dbm - create database connection
+[2017-07-06 13:22:11.069] [INFO] util/dbm - authenticated
+[2017-07-06 13:22:41.085] [TRACE] util/dbm - create database connection
+[2017-07-06 13:22:43.111] [INFO] util/dbm - authenticated
+[2017-07-06 13:23:13.287] [TRACE] util/dbm - create database connection
+[2017-07-06 13:23:14.211] [INFO] util/dbm - authenticated
+[2017-07-06 13:23:44.407] [TRACE] util/dbm - create database connection
+[2017-07-06 13:23:45.133] [INFO] util/dbm - authenticated
+[2017-07-06 13:24:15.350] [TRACE] util/dbm - create database connection
+[2017-07-06 13:24:16.286] [INFO] util/dbm - authenticated
+[2017-07-06 13:24:46.412] [TRACE] util/dbm - create database connection
+[2017-07-06 13:24:47.131] [INFO] util/dbm - authenticated
+[2017-07-06 13:25:17.350] [TRACE] util/dbm - create database connection
+[2017-07-06 13:25:18.092] [INFO] util/dbm - authenticated
+[2017-07-06 13:25:48.164] [TRACE] util/dbm - create database connection
+[2017-07-06 13:25:50.227] [INFO] util/dbm - authenticated
+[2017-07-06 13:26:20.412] [TRACE] util/dbm - create database connection
+[2017-07-06 13:26:21.511] [INFO] util/dbm - authenticated
+[2017-07-06 13:26:51.759] [TRACE] util/dbm - create database connection
+[2017-07-06 13:26:52.806] [INFO] util/dbm - authenticated
+[2017-07-06 13:27:23.009] [TRACE] util/dbm - create database connection
+[2017-07-06 13:27:24.123] [INFO] util/dbm - authenticated
+[2017-07-06 13:27:54.295] [TRACE] util/dbm - create database connection
+[2017-07-06 13:27:55.292] [INFO] util/dbm - authenticated
+[2017-07-06 13:28:25.413] [TRACE] util/dbm - create database connection
+[2017-07-06 13:28:26.338] [INFO] util/dbm - authenticated
+[2017-07-06 13:28:56.413] [TRACE] util/dbm - create database connection
+[2017-07-06 13:28:57.350] [INFO] util/dbm - authenticated
+[2017-07-06 13:29:27.416] [TRACE] util/dbm - create database connection
+[2017-07-06 13:29:28.355] [INFO] util/dbm - authenticated
+[2017-07-06 13:29:58.414] [TRACE] util/dbm - create database connection
+[2017-07-06 13:29:59.495] [INFO] util/dbm - authenticated
+[2017-07-06 13:30:29.788] [TRACE] util/dbm - create database connection
+[2017-07-06 13:30:31.869] [INFO] util/dbm - authenticated
+[2017-07-06 13:31:02.059] [TRACE] util/dbm - create database connection
+[2017-07-06 13:31:03.311] [INFO] util/dbm - authenticated
+[2017-07-06 13:31:33.415] [TRACE] util/dbm - create database connection
+[2017-07-06 13:31:34.235] [INFO] util/dbm - authenticated
+[2017-07-06 13:32:04.399] [TRACE] util/dbm - create database connection
+[2017-07-06 13:32:05.393] [INFO] util/dbm - authenticated
+[2017-07-06 13:32:35.430] [TRACE] util/dbm - create database connection
+[2017-07-06 13:32:36.241] [INFO] util/dbm - authenticated
+[2017-07-06 13:33:06.274] [TRACE] util/dbm - create database connection
+[2017-07-06 13:33:07.172] [INFO] util/dbm - authenticated
+[2017-07-06 13:33:37.231] [TRACE] util/dbm - create database connection
+[2017-07-06 13:33:38.292] [INFO] util/dbm - authenticated
+[2017-07-06 13:34:08.328] [TRACE] util/dbm - create database connection
+[2017-07-06 13:34:09.540] [INFO] util/dbm - authenticated
+[2017-07-06 13:34:39.641] [TRACE] util/dbm - create database connection
+[2017-07-06 13:34:40.785] [INFO] util/dbm - authenticated
+[2017-07-06 13:35:10.841] [TRACE] util/dbm - create database connection
+[2017-07-06 13:35:11.957] [INFO] util/dbm - authenticated
+[2017-07-06 13:35:42.029] [TRACE] util/dbm - create database connection
+[2017-07-06 13:35:43.105] [INFO] util/dbm - authenticated
+[2017-07-06 13:36:13.122] [TRACE] util/dbm - create database connection
+[2017-07-06 13:36:13.971] [INFO] util/dbm - authenticated
+[2017-07-06 13:36:43.985] [TRACE] util/dbm - create database connection
+[2017-07-06 13:36:45.072] [INFO] util/dbm - authenticated
+[2017-07-06 13:37:15.089] [TRACE] util/dbm - create database connection
+[2017-07-06 13:37:17.278] [INFO] util/dbm - authenticated
+[2017-07-06 13:37:47.293] [TRACE] util/dbm - create database connection
+[2017-07-06 13:37:48.148] [INFO] util/dbm - authenticated
+[2017-07-06 13:38:02.198] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 8838 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:38:18.165] [TRACE] util/dbm - create database connection
+[2017-07-06 13:38:19.278] [INFO] util/dbm - authenticated
+[2017-07-06 13:38:49.296] [TRACE] util/dbm - create database connection
+[2017-07-06 13:38:50.411] [INFO] util/dbm - authenticated
+[2017-07-06 13:39:20.433] [TRACE] util/dbm - create database connection
+[2017-07-06 13:39:22.578] [INFO] util/dbm - authenticated
+[2017-07-06 13:39:52.595] [TRACE] util/dbm - create database connection
+[2017-07-06 13:39:53.721] [INFO] util/dbm - authenticated
+[2017-07-06 13:40:23.737] [TRACE] util/dbm - create database connection
+[2017-07-06 13:40:24.711] [INFO] util/dbm - authenticated
+[2017-07-06 13:40:54.726] [TRACE] util/dbm - create database connection
+[2017-07-06 13:40:55.611] [INFO] util/dbm - authenticated
+[2017-07-06 13:41:25.628] [TRACE] util/dbm - create database connection
+[2017-07-06 13:41:26.659] [INFO] util/dbm - authenticated
+[2017-07-06 13:41:56.672] [TRACE] util/dbm - create database connection
+[2017-07-06 13:41:57.643] [INFO] util/dbm - authenticated
+[2017-07-06 13:42:27.659] [TRACE] util/dbm - create database connection
+[2017-07-06 13:42:28.741] [INFO] util/dbm - authenticated
+[2017-07-06 13:42:58.759] [TRACE] util/dbm - create database connection
+[2017-07-06 13:42:59.768] [INFO] util/dbm - authenticated
+[2017-07-06 13:43:29.784] [TRACE] util/dbm - create database connection
+[2017-07-06 13:43:30.830] [INFO] util/dbm - authenticated
+[2017-07-06 13:44:00.844] [TRACE] util/dbm - create database connection
+[2017-07-06 13:44:01.962] [INFO] util/dbm - authenticated
+[2017-07-06 13:44:31.976] [TRACE] util/dbm - create database connection
+[2017-07-06 13:44:33.108] [INFO] util/dbm - authenticated
+[2017-07-06 13:45:03.127] [TRACE] util/dbm - create database connection
+[2017-07-06 13:45:03.978] [INFO] util/dbm - authenticated
+[2017-07-06 13:45:33.995] [TRACE] util/dbm - create database connection
+[2017-07-06 13:45:34.981] [INFO] util/dbm - authenticated
+[2017-07-06 13:46:04.997] [TRACE] util/dbm - create database connection
+[2017-07-06 13:46:05.977] [INFO] util/dbm - authenticated
+[2017-07-06 13:46:35.992] [TRACE] util/dbm - create database connection
+[2017-07-06 13:46:37.039] [INFO] util/dbm - authenticated
+[2017-07-06 13:47:07.053] [TRACE] util/dbm - create database connection
+[2017-07-06 13:47:08.728] [INFO] util/dbm - authenticated
+[2017-07-06 13:47:38.740] [TRACE] util/dbm - create database connection
+[2017-07-06 13:47:39.756] [INFO] util/dbm - authenticated
+[2017-07-06 13:48:09.768] [TRACE] util/dbm - create database connection
+[2017-07-06 13:48:10.754] [INFO] util/dbm - authenticated
+[2017-07-06 13:48:40.771] [TRACE] util/dbm - create database connection
+[2017-07-06 13:48:41.776] [INFO] util/dbm - authenticated
+[2017-07-06 13:49:11.794] [TRACE] util/dbm - create database connection
+[2017-07-06 13:49:12.744] [INFO] util/dbm - authenticated
+[2017-07-06 13:49:42.761] [TRACE] util/dbm - create database connection
+[2017-07-06 13:49:43.715] [INFO] util/dbm - authenticated
+[2017-07-06 13:50:13.734] [TRACE] util/dbm - create database connection
+[2017-07-06 13:50:14.792] [INFO] util/dbm - authenticated
+[2017-07-06 13:50:44.806] [TRACE] util/dbm - create database connection
+[2017-07-06 13:50:47.064] [INFO] util/dbm - authenticated
+[2017-07-06 13:51:17.081] [TRACE] util/dbm - create database connection
+[2017-07-06 13:51:18.027] [INFO] util/dbm - authenticated
+[2017-07-06 13:51:48.044] [TRACE] util/dbm - create database connection
+[2017-07-06 13:51:49.129] [INFO] util/dbm - authenticated
+[2017-07-06 13:52:19.142] [TRACE] util/dbm - create database connection
+[2017-07-06 13:52:20.198] [INFO] util/dbm - authenticated
+[2017-07-06 13:52:50.213] [TRACE] util/dbm - create database connection
+[2017-07-06 13:52:51.147] [INFO] util/dbm - authenticated
+[2017-07-06 13:53:02.723] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 9911 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:53:14.059] [TRACE] app - ::1 - - "POST /admin/product_add HTTP/1.1" 404 106 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 13:53:21.169] [TRACE] util/dbm - create database connection
+[2017-07-06 13:53:22.238] [INFO] util/dbm - authenticated
+[2017-07-06 13:53:52.252] [TRACE] util/dbm - create database connection
+[2017-07-06 13:53:53.387] [INFO] util/dbm - authenticated
+[2017-07-06 13:54:23.406] [TRACE] util/dbm - create database connection
+[2017-07-06 13:54:24.545] [INFO] util/dbm - authenticated
+[2017-07-06 13:54:54.564] [TRACE] util/dbm - create database connection
+[2017-07-06 13:54:55.728] [INFO] util/dbm - authenticated
+[2017-07-06 15:30:36.889] [INFO] util/dbm - authenticated
+[2017-07-06 15:30:54.823] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2375 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:30:59.775] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:30:59.789] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 1982 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:31:07.995] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 9968 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:31:24.215] [TRACE] app - ::1 - - "POST /admin/product_add HTTP/1.1" 500 119 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:31:29.790] [TRACE] util/dbm - create database connection
+[2017-07-06 15:31:30.532] [INFO] util/dbm - authenticated
+[2017-07-06 15:31:54.155] [INFO] util/dbm - authenticated
+[2017-07-06 15:32:06.609] [TRACE] app - ::1 - - "POST /admin/product_add HTTP/1.1" 200 2375 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:32:10.164] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:32:10.178] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:32:11.897] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 9968 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:32:40.941] [TRACE] util/dbm - create database connection
+[2017-07-06 15:33:12.347] [TRACE] util/dbm - create database connection
+[2017-07-06 15:33:12.360] [INFO] util/dbm - disconnected
+[2017-07-06 15:33:27.002] [FATAL] app - { Error: Quit inactivity timeout
+    at Quit.<anonymous> (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:160:17)
+    at emitNone (events.js:86:13)
+    at Quit.emit (events.js:185:7)
+    at Quit._onTimeout (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Sequence.js:127:8)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+  code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+  fatal: true,
+  timeout: 30000 }
+[2017-07-06 15:33:27.016] [INFO] util/dbm - disconnected
+[2017-07-06 15:33:57.044] [TRACE] util/dbm - create database connection
+[2017-07-06 15:33:57.827] [INFO] util/dbm - authenticated
+[2017-07-06 15:34:23.820] [TRACE] app - ::ffff:127.0.0.1 - - "POST /admin/product_add HTTP/1.1" 200 2375 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:34:24.617] [INFO] util/dbm - authenticated
+[2017-07-06 15:34:28.865] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:34:28.873] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:34:37.408] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 9968 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:35:32.666] [TRACE] util/dbm - create database connection
+[2017-07-06 15:35:33.419] [INFO] util/dbm - authenticated
+[2017-07-06 15:36:03.444] [TRACE] util/dbm - create database connection
+[2017-07-06 15:36:04.166] [INFO] util/dbm - authenticated
+[2017-07-06 15:36:34.196] [TRACE] util/dbm - create database connection
+[2017-07-06 15:36:34.996] [INFO] util/dbm - authenticated
+[2017-07-06 15:36:45.320] [INFO] util/dbm - authenticated
+[2017-07-06 15:36:52.666] [TRACE] app - ::ffff:127.0.0.1 - - "GET /admin/product_add HTTP/1.1" 200 2375 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:36:54.769] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:36:54.777] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 304 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:36:58.001] [TRACE] app - ::ffff:127.0.0.1 - - "GET /admin/product_add HTTP/1.1" 200 9968 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:37:25.465] [TRACE] util/dbm - create database connection
+[2017-07-06 15:37:26.070] [INFO] util/dbm - authenticated
+[2017-07-06 15:53:33.325] [INFO] util/dbm - authenticated
+[2017-07-06 15:53:41.252] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2420 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:53:43.210] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:53:43.219] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2027 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:53:44.412] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10318 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 15:54:13.362] [TRACE] util/dbm - create database connection
+[2017-07-06 15:54:14.076] [INFO] util/dbm - authenticated
+[2017-07-06 15:54:44.103] [TRACE] util/dbm - create database connection
+[2017-07-06 15:54:44.811] [INFO] util/dbm - authenticated
+[2017-07-06 15:55:14.835] [TRACE] util/dbm - create database connection
+[2017-07-06 15:55:15.537] [INFO] util/dbm - authenticated
+[2017-07-06 15:55:45.558] [TRACE] util/dbm - create database connection
+[2017-07-06 15:55:46.393] [INFO] util/dbm - authenticated
+[2017-07-06 15:56:16.419] [TRACE] util/dbm - create database connection
+[2017-07-06 15:56:17.102] [INFO] util/dbm - authenticated
+[2017-07-06 15:56:47.126] [TRACE] util/dbm - create database connection
+[2017-07-06 15:56:47.944] [INFO] util/dbm - authenticated
+[2017-07-06 15:57:17.965] [TRACE] util/dbm - create database connection
+[2017-07-06 15:57:18.924] [INFO] util/dbm - authenticated
+[2017-07-06 15:57:51.189] [FATAL] app - { Error: Quit inactivity timeout
+    at Quit.<anonymous> (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\Protocol.js:160:17)
+    at emitNone (events.js:86:13)
+    at Quit.emit (events.js:185:7)
+    at Quit._onTimeout (D:\money\store\src\node_modules\.2.13.0@mysql\lib\protocol\sequences\Sequence.js:127:8)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+  code: 'PROTOCOL_SEQUENCE_TIMEOUT',
+  fatal: true,
+  timeout: 30000 }
+[2017-07-06 15:57:51.205] [TRACE] util/dbm - create database connection
+[2017-07-06 15:57:52.236] [INFO] util/dbm - authenticated
+[2017-07-06 15:58:22.263] [TRACE] util/dbm - create database connection
+[2017-07-06 15:58:23.134] [INFO] util/dbm - authenticated
+[2017-07-06 15:58:53.150] [TRACE] util/dbm - create database connection
+[2017-07-06 15:58:55.096] [INFO] util/dbm - authenticated
+[2017-07-06 15:59:25.115] [TRACE] util/dbm - create database connection
+[2017-07-06 15:59:25.887] [INFO] util/dbm - authenticated
+[2017-07-06 15:59:55.927] [TRACE] util/dbm - create database connection
+[2017-07-06 15:59:56.693] [INFO] util/dbm - authenticated
+[2017-07-06 16:00:26.720] [TRACE] util/dbm - create database connection
+[2017-07-06 16:00:27.791] [INFO] util/dbm - authenticated
+[2017-07-06 16:00:57.814] [TRACE] util/dbm - create database connection
+[2017-07-06 16:00:58.774] [INFO] util/dbm - authenticated
+[2017-07-06 16:01:28.793] [TRACE] util/dbm - create database connection
+[2017-07-06 16:01:29.374] [INFO] util/dbm - authenticated
+[2017-07-06 16:01:59.394] [TRACE] util/dbm - create database connection
+[2017-07-06 16:02:00.206] [INFO] util/dbm - authenticated
+[2017-07-06 16:02:30.226] [TRACE] util/dbm - create database connection
+[2017-07-06 16:02:31.008] [INFO] util/dbm - authenticated
+[2017-07-06 16:03:01.026] [TRACE] util/dbm - create database connection
+[2017-07-06 16:03:01.829] [INFO] util/dbm - authenticated
+[2017-07-06 16:03:31.843] [TRACE] util/dbm - create database connection
+[2017-07-06 16:03:32.824] [INFO] util/dbm - authenticated
+[2017-07-06 16:04:02.846] [TRACE] util/dbm - create database connection
+[2017-07-06 16:04:03.707] [INFO] util/dbm - authenticated
+[2017-07-06 16:04:33.726] [TRACE] util/dbm - create database connection
+[2017-07-06 16:04:34.726] [INFO] util/dbm - authenticated
+[2017-07-06 16:05:04.748] [TRACE] util/dbm - create database connection
+[2017-07-06 16:05:05.602] [INFO] util/dbm - authenticated
+[2017-07-06 16:05:35.613] [TRACE] util/dbm - create database connection
+[2017-07-06 16:05:36.560] [INFO] util/dbm - authenticated
+[2017-07-06 16:06:05.074] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10882 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:06:06.584] [TRACE] util/dbm - create database connection
+[2017-07-06 16:06:07.519] [INFO] util/dbm - authenticated
+[2017-07-06 16:06:37.541] [TRACE] util/dbm - create database connection
+[2017-07-06 16:06:38.670] [INFO] util/dbm - authenticated
+[2017-07-06 16:07:06.855] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10884 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:07:08.688] [TRACE] util/dbm - create database connection
+[2017-07-06 16:07:09.625] [INFO] util/dbm - authenticated
+[2017-07-06 16:07:39.648] [TRACE] util/dbm - create database connection
+[2017-07-06 16:07:40.413] [INFO] util/dbm - authenticated
+[2017-07-06 16:08:10.436] [TRACE] util/dbm - create database connection
+[2017-07-06 16:08:12.534] [INFO] util/dbm - authenticated
+[2017-07-06 16:08:42.549] [TRACE] util/dbm - create database connection
+[2017-07-06 16:08:44.827] [INFO] util/dbm - authenticated
+[2017-07-06 16:09:14.847] [TRACE] util/dbm - create database connection
+[2017-07-06 16:09:15.742] [INFO] util/dbm - authenticated
+[2017-07-06 16:09:45.768] [TRACE] util/dbm - create database connection
+[2017-07-06 16:09:46.802] [INFO] util/dbm - authenticated
+[2017-07-06 16:10:16.830] [TRACE] util/dbm - create database connection
+[2017-07-06 16:10:17.886] [INFO] util/dbm - authenticated
+[2017-07-06 16:10:47.908] [TRACE] util/dbm - create database connection
+[2017-07-06 16:10:48.902] [INFO] util/dbm - authenticated
+[2017-07-06 16:11:18.923] [TRACE] util/dbm - create database connection
+[2017-07-06 16:11:19.854] [INFO] util/dbm - authenticated
+[2017-07-06 16:11:49.879] [TRACE] util/dbm - create database connection
+[2017-07-06 16:11:50.890] [INFO] util/dbm - authenticated
+[2017-07-06 16:12:20.911] [TRACE] util/dbm - create database connection
+[2017-07-06 16:12:23.384] [INFO] util/dbm - authenticated
+[2017-07-06 16:12:53.404] [TRACE] util/dbm - create database connection
+[2017-07-06 16:12:53.995] [INFO] util/dbm - authenticated
+[2017-07-06 16:13:24.020] [TRACE] util/dbm - create database connection
+[2017-07-06 16:13:24.937] [INFO] util/dbm - authenticated
+[2017-07-06 16:13:54.961] [TRACE] util/dbm - create database connection
+[2017-07-06 16:13:55.822] [INFO] util/dbm - authenticated
+[2017-07-06 16:14:25.842] [TRACE] util/dbm - create database connection
+[2017-07-06 16:14:26.894] [INFO] util/dbm - authenticated
+[2017-07-06 16:14:56.914] [TRACE] util/dbm - create database connection
+[2017-07-06 16:14:57.888] [INFO] util/dbm - authenticated
+[2017-07-06 16:15:27.908] [TRACE] util/dbm - create database connection
+[2017-07-06 16:15:28.757] [INFO] util/dbm - authenticated
+[2017-07-06 16:15:58.776] [TRACE] util/dbm - create database connection
+[2017-07-06 16:15:59.831] [INFO] util/dbm - authenticated
+[2017-07-06 16:16:29.856] [TRACE] util/dbm - create database connection
+[2017-07-06 16:16:30.811] [INFO] util/dbm - authenticated
+[2017-07-06 16:17:00.830] [TRACE] util/dbm - create database connection
+[2017-07-06 16:17:01.789] [INFO] util/dbm - authenticated
+[2017-07-06 16:17:31.806] [TRACE] util/dbm - create database connection
+[2017-07-06 16:17:34.966] [INFO] util/dbm - authenticated
+[2017-07-06 16:18:04.990] [TRACE] util/dbm - create database connection
+[2017-07-06 16:18:06.011] [INFO] util/dbm - authenticated
+[2017-07-06 16:18:36.031] [TRACE] util/dbm - create database connection
+[2017-07-06 16:18:37.073] [INFO] util/dbm - authenticated
+[2017-07-06 16:19:07.097] [TRACE] util/dbm - create database connection
+[2017-07-06 16:19:07.944] [INFO] util/dbm - authenticated
+[2017-07-06 16:19:37.963] [TRACE] util/dbm - create database connection
+[2017-07-06 16:19:38.828] [INFO] util/dbm - authenticated
+[2017-07-06 16:20:08.847] [TRACE] util/dbm - create database connection
+[2017-07-06 16:20:09.810] [INFO] util/dbm - authenticated
+[2017-07-06 16:20:39.832] [TRACE] util/dbm - create database connection
+[2017-07-06 16:20:40.794] [INFO] util/dbm - authenticated
+[2017-07-06 16:21:10.815] [TRACE] util/dbm - create database connection
+[2017-07-06 16:21:11.825] [INFO] util/dbm - authenticated
+[2017-07-06 16:21:41.845] [TRACE] util/dbm - create database connection
+[2017-07-06 16:21:42.380] [INFO] util/dbm - authenticated
+[2017-07-06 16:22:12.400] [TRACE] util/dbm - create database connection
+[2017-07-06 16:22:13.182] [INFO] util/dbm - authenticated
+[2017-07-06 16:25:49.687] [INFO] util/dbm - authenticated
+[2017-07-06 16:25:52.230] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2420 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:25:54.322] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:25:54.335] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2027 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:25:56.101] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10562 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:25:59.860] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:26:24.716] [TRACE] util/dbm - create database connection
+[2017-07-06 16:26:25.754] [INFO] util/dbm - authenticated
+[2017-07-06 16:31:28.995] [TRACE] app - ::ffff:127.0.0.1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:31:29.891] [INFO] util/dbm - authenticated
+[2017-07-06 16:31:46.108] [TRACE] app - ::ffff:127.0.0.1 - - "GET /admin/product_add HTTP/1.1" 200 2420 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:31:48.030] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:31:48.041] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2027 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:31:49.296] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10562 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:31:53.179] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:34:55.701] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:34:55.707] [TRACE] util/dbm - create database connection
+[2017-07-06 16:34:56.607] [INFO] util/dbm - authenticated
+[2017-07-06 16:46:01.188] [INFO] util/dbm - authenticated
+[2017-07-06 16:46:05.913] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2420 "http://localhost:6688/admin/product_list" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:46:08.176] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:46:08.186] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2027 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:46:10.159] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10562 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:46:14.564] [TRACE] app - ::1 - - "POST /api/upload?token=abcdef12345 HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:46:20.375] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:46:38.218] [TRACE] util/dbm - create database connection
+[2017-07-06 16:46:39.151] [INFO] util/dbm - authenticated
+[2017-07-06 16:46:50.226] [INFO] util/dbm - authenticated
+[2017-07-06 16:47:01.209] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2420 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:47:04.488] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:47:04.496] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2027 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:47:05.890] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10562 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:47:35.569] [TRACE] util/dbm - create database connection
+[2017-07-06 16:47:36.207] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:47:39.895] [INFO] util/dbm - authenticated
+[2017-07-06 16:48:09.919] [TRACE] util/dbm - create database connection
+[2017-07-06 16:48:12.018] [INFO] util/dbm - authenticated
+[2017-07-06 16:48:39.434] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10521 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:48:40.850] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10521 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:48:41.400] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10521 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:48:42.036] [TRACE] util/dbm - create database connection
+[2017-07-06 16:48:47.143] [INFO] util/dbm - authenticated
+[2017-07-06 16:49:17.164] [TRACE] util/dbm - create database connection
+[2017-07-06 16:49:18.104] [INFO] util/dbm - authenticated
+[2017-07-06 16:49:48.122] [TRACE] util/dbm - create database connection
+[2017-07-06 16:49:49.120] [INFO] util/dbm - authenticated
+[2017-07-06 16:49:50.452] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10545 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:50:19.142] [TRACE] util/dbm - create database connection
+[2017-07-06 16:50:20.228] [INFO] util/dbm - authenticated
+[2017-07-06 16:50:50.245] [TRACE] util/dbm - create database connection
+[2017-07-06 16:50:50.852] [INFO] util/dbm - authenticated
+[2017-07-06 16:51:20.869] [TRACE] util/dbm - create database connection
+[2017-07-06 16:51:21.771] [INFO] util/dbm - authenticated
+[2017-07-06 16:51:51.788] [TRACE] util/dbm - create database connection
+[2017-07-06 16:51:53.805] [INFO] util/dbm - authenticated
+[2017-07-06 16:52:23.822] [TRACE] util/dbm - create database connection
+[2017-07-06 16:52:26.040] [INFO] util/dbm - authenticated
+[2017-07-06 16:52:56.056] [TRACE] util/dbm - create database connection
+[2017-07-06 16:52:57.994] [INFO] util/dbm - authenticated
+[2017-07-06 16:53:28.010] [TRACE] util/dbm - create database connection
+[2017-07-06 16:53:28.703] [INFO] util/dbm - authenticated
+[2017-07-06 16:53:58.720] [TRACE] util/dbm - create database connection
+[2017-07-06 16:53:59.497] [INFO] util/dbm - authenticated
+[2017-07-06 16:54:29.512] [TRACE] util/dbm - create database connection
+[2017-07-06 16:54:30.425] [INFO] util/dbm - authenticated
+[2017-07-06 16:55:00.441] [TRACE] util/dbm - create database connection
+[2017-07-06 16:55:02.947] [INFO] util/dbm - authenticated
+[2017-07-06 16:55:32.962] [TRACE] util/dbm - create database connection
+[2017-07-06 16:55:35.159] [INFO] util/dbm - authenticated
+[2017-07-06 16:56:05.179] [TRACE] util/dbm - create database connection
+[2017-07-06 16:56:06.261] [INFO] util/dbm - authenticated
+[2017-07-06 16:56:11.080] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 11260 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:56:36.277] [TRACE] util/dbm - create database connection
+[2017-07-06 16:56:37.279] [INFO] util/dbm - authenticated
+[2017-07-06 16:57:07.300] [TRACE] util/dbm - create database connection
+[2017-07-06 16:57:09.120] [INFO] util/dbm - authenticated
+[2017-07-06 16:57:39.139] [TRACE] util/dbm - create database connection
+[2017-07-06 16:57:40.195] [INFO] util/dbm - authenticated
+[2017-07-06 16:58:10.210] [TRACE] util/dbm - create database connection
+[2017-07-06 16:58:10.838] [INFO] util/dbm - authenticated
+[2017-07-06 16:58:40.852] [TRACE] util/dbm - create database connection
+[2017-07-06 16:58:41.601] [INFO] util/dbm - authenticated
+[2017-07-06 16:59:01.112] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 11257 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:59:11.624] [TRACE] util/dbm - create database connection
+[2017-07-06 16:59:12.419] [INFO] util/dbm - authenticated
+[2017-07-06 16:59:39.522] [INFO] util/dbm - authenticated
+[2017-07-06 16:59:47.923] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2420 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:59:50.958] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:59:50.966] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2027 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 16:59:53.610] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 11257 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:00:20.997] [TRACE] util/dbm - create database connection
+[2017-07-06 17:00:21.930] [INFO] util/dbm - authenticated
+[2017-07-06 17:00:38.728] [INFO] util/dbm - authenticated
+[2017-07-06 17:01:02.355] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2420 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:01:04.485] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:01:04.494] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2027 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:01:05.798] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 11257 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:01:25.341] [INFO] util/dbm - authenticated
+[2017-07-06 17:01:46.162] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2420 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:01:47.927] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:01:47.939] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2027 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:01:49.273] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 11257 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:02:31.274] [TRACE] util/dbm - create database connection
+[2017-07-06 17:02:32.134] [INFO] util/dbm - authenticated
+[2017-07-06 17:03:02.152] [TRACE] util/dbm - create database connection
+[2017-07-06 17:03:02.878] [INFO] util/dbm - authenticated
+[2017-07-06 17:03:32.902] [TRACE] util/dbm - create database connection
+[2017-07-06 17:03:33.783] [INFO] util/dbm - authenticated
+[2017-07-06 17:04:03.805] [TRACE] util/dbm - create database connection
+[2017-07-06 17:04:04.700] [INFO] util/dbm - authenticated
+[2017-07-06 17:04:37.126] [INFO] util/dbm - authenticated
+[2017-07-06 17:05:07.152] [TRACE] util/dbm - create database connection
+[2017-07-06 17:05:08.281] [INFO] util/dbm - authenticated
+[2017-07-06 17:05:38.298] [TRACE] util/dbm - create database connection
+[2017-07-06 17:05:39.056] [INFO] util/dbm - authenticated
+[2017-07-06 17:06:09.078] [TRACE] util/dbm - create database connection
+[2017-07-06 17:06:09.791] [INFO] util/dbm - authenticated
+[2017-07-06 17:06:39.817] [TRACE] util/dbm - create database connection
+[2017-07-06 17:06:40.614] [INFO] util/dbm - authenticated
+[2017-07-06 17:07:10.637] [TRACE] util/dbm - create database connection
+[2017-07-06 17:07:11.381] [INFO] util/dbm - authenticated
+[2017-07-06 17:07:38.999] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:07:41.402] [TRACE] util/dbm - create database connection
+[2017-07-06 17:07:43.610] [INFO] util/dbm - authenticated
+[2017-07-06 17:07:54.894] [INFO] util/dbm - authenticated
+[2017-07-06 17:08:16.985] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2420 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:08:20.128] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:08:20.137] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2027 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:08:22.225] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 11276 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:08:22.820] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 11276 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:08:33.781] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:08:50.141] [TRACE] util/dbm - create database connection
+[2017-07-06 17:08:50.932] [INFO] util/dbm - authenticated
+[2017-07-06 17:09:20.951] [TRACE] util/dbm - create database connection
+[2017-07-06 17:09:21.711] [INFO] util/dbm - authenticated
+[2017-07-06 17:09:51.734] [TRACE] util/dbm - create database connection
+[2017-07-06 17:09:52.517] [INFO] util/dbm - authenticated
+[2017-07-06 17:10:22.536] [TRACE] util/dbm - create database connection
+[2017-07-06 17:10:23.390] [INFO] util/dbm - authenticated
+[2017-07-06 17:10:38.924] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10544 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:10:46.196] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:10:53.412] [TRACE] util/dbm - create database connection
+[2017-07-06 17:10:54.174] [INFO] util/dbm - authenticated
+[2017-07-06 17:10:56.777] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:11:16.281] [TRACE] app - ::1 - - "POST /api/upload?token=abcdef12345 HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:11:24.195] [TRACE] util/dbm - create database connection
+[2017-07-06 17:11:25.034] [INFO] util/dbm - authenticated
+[2017-07-06 17:11:55.053] [TRACE] util/dbm - create database connection
+[2017-07-06 17:11:55.888] [INFO] util/dbm - authenticated
+[2017-07-06 17:12:25.904] [TRACE] util/dbm - create database connection
+[2017-07-06 17:12:26.783] [INFO] util/dbm - authenticated
+[2017-07-06 17:12:56.797] [TRACE] util/dbm - create database connection
+[2017-07-06 17:12:57.802] [INFO] util/dbm - authenticated
+[2017-07-06 17:13:13.312] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 2420 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:13:14.175] [INFO] util/dbm - authenticated
+[2017-07-06 17:13:16.846] [TRACE] app - ::1 - - "POST /admin/login HTTP/1.1" 302 56 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:13:16.859] [TRACE] app - ::1 - - "GET /admin HTTP/1.1" 200 2027 "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:13:18.954] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10543 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:13:25.862] [TRACE] app - ::1 - - "POST /api/upload?token=abcdef12345 HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:13:29.335] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:13:39.229] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:13:47.510] [TRACE] util/dbm - create database connection
+[2017-07-06 17:13:48.174] [INFO] util/dbm - authenticated
+[2017-07-06 17:13:51.787] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:14:11.096] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10543 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:14:18.210] [TRACE] util/dbm - create database connection
+[2017-07-06 17:14:18.954] [INFO] util/dbm - authenticated
+[2017-07-06 17:14:48.979] [TRACE] util/dbm - create database connection
+[2017-07-06 17:14:49.641] [INFO] util/dbm - authenticated
+[2017-07-06 17:15:19.665] [TRACE] util/dbm - create database connection
+[2017-07-06 17:15:20.307] [INFO] util/dbm - authenticated
+[2017-07-06 17:15:44.963] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10585 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:15:50.331] [TRACE] util/dbm - create database connection
+[2017-07-06 17:15:51.164] [INFO] util/dbm - authenticated
+[2017-07-06 17:16:00.427] [TRACE] app - ::ffff:127.0.0.1 - - "GET /admin/product_add HTTP/1.1" 200 10547 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:16:04.588] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:16:21.180] [TRACE] util/dbm - create database connection
+[2017-07-06 17:16:21.912] [INFO] util/dbm - authenticated
+[2017-07-06 17:16:51.929] [TRACE] util/dbm - create database connection
+[2017-07-06 17:16:52.685] [INFO] util/dbm - authenticated
+[2017-07-06 17:17:22.699] [TRACE] util/dbm - create database connection
+[2017-07-06 17:17:23.482] [INFO] util/dbm - authenticated
+[2017-07-06 17:17:53.503] [TRACE] util/dbm - create database connection
+[2017-07-06 17:17:54.345] [INFO] util/dbm - authenticated
+[2017-07-06 17:18:24.361] [TRACE] util/dbm - create database connection
+[2017-07-06 17:18:28.251] [INFO] util/dbm - authenticated
+[2017-07-06 17:18:58.267] [TRACE] util/dbm - create database connection
+[2017-07-06 17:18:58.834] [INFO] util/dbm - authenticated
+[2017-07-06 17:19:28.850] [TRACE] util/dbm - create database connection
+[2017-07-06 17:19:29.373] [INFO] util/dbm - authenticated
+[2017-07-06 17:19:59.391] [TRACE] util/dbm - create database connection
+[2017-07-06 17:20:00.040] [INFO] util/dbm - authenticated
+[2017-07-06 17:20:25.546] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10839 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:20:30.064] [TRACE] util/dbm - create database connection
+[2017-07-06 17:20:30.542] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:20:30.713] [INFO] util/dbm - authenticated
+[2017-07-06 17:20:57.486] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10555 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:21:00.728] [TRACE] util/dbm - create database connection
+[2017-07-06 17:21:01.415] [INFO] util/dbm - authenticated
+[2017-07-06 17:21:05.271] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:21:09.902] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:21:31.435] [TRACE] util/dbm - create database connection
+[2017-07-06 17:21:32.220] [INFO] util/dbm - authenticated
+[2017-07-06 17:22:02.237] [TRACE] util/dbm - create database connection
+[2017-07-06 17:22:02.952] [INFO] util/dbm - authenticated
+[2017-07-06 17:22:32.968] [TRACE] util/dbm - create database connection
+[2017-07-06 17:22:33.626] [INFO] util/dbm - authenticated
+[2017-07-06 17:23:03.646] [TRACE] util/dbm - create database connection
+[2017-07-06 17:23:04.614] [INFO] util/dbm - authenticated
+[2017-07-06 17:23:34.631] [TRACE] util/dbm - create database connection
+[2017-07-06 17:23:35.650] [INFO] util/dbm - authenticated
+[2017-07-06 17:23:58.527] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10687 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:24:01.937] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:24:05.667] [TRACE] util/dbm - create database connection
+[2017-07-06 17:24:07.598] [INFO] util/dbm - authenticated
+[2017-07-06 17:24:37.460] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10688 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:24:37.611] [TRACE] util/dbm - create database connection
+[2017-07-06 17:24:38.291] [INFO] util/dbm - authenticated
+[2017-07-06 17:24:43.223] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:25:06.103] [TRACE] app - ::1 - - "GET /admin/product_add HTTP/1.1" 200 10686 "http://localhost:6688/admin" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:25:08.309] [TRACE] util/dbm - create database connection
+[2017-07-06 17:25:09.059] [INFO] util/dbm - authenticated
+[2017-07-06 17:25:10.779] [TRACE] app - ::1 - - "POST /api/upload HTTP/1.1" 200 - "http://localhost:6688/admin/product_add" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+[2017-07-06 17:25:39.075] [TRACE] util/dbm - create database connection
+[2017-07-06 17:25:41.372] [INFO] util/dbm - authenticated

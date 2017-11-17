@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title>后台管理中心</title>
+    <% include ./common/head.html %>
+</head>
+
+<body style="background-color:#f2f9fd;">
+    <% include ./common/header.html %>
+        <% include ./common/leftnav.html %>
+
+            <ul class="bread">
+                <li><a href="/admin" target="right" class="icon-home"> 首页</a></li>
+                <li><a href="#">网站信息</a></li>
+            </ul>
+            <div class="admin">
+                <div class="clr">
+                    <input type="file" id="imagefile" style="filter:alpha(opacity=0);opacity:0;width: 90px;height: 32px;position: absolute;">
+                    <input type="button" class="button bg-blue margin-left" id="image1" value="+ 浏览上传" style="float:left;padding: 5px 10px;">
+                </div>
+                <div>
+                    <div class="m30">
+                        <img src="<%= qrcode %>" alt="" width="200px" id="qrcode">
+                    </div>
+                </div>
+                <script type="text/javascript " src="/lib/jquery-ui-1.12.1.sort/jquery-ui.min.js"></script>
+                <script type="text/javascript " src="/lib/jquery.fileupload.js"></script>
+                <script>
+                    var ajaxfile = $('#imagefile').fileupload({
+                        url: '/api/upload',
+                        done: function(e, data) {
+                            if (data.result) {
+                                var d = JSON.parse(data.result);
+                                if (d.code == '200') {
+
+                                    $.ajax({
+                                        url: '/admin/qrcode',
+                                        data: {
+                                            img: d.url
+                                        },
+                                        dataType: 'json',
+                                        type: 'POST',
+                                        success: function(data) {
+                                            if (data.code == 200) {
+                                                $("#qrcode").attr('src', d.url);
+                                                alert('更换成功');
+                                            }
+
+                                        }
+                                    });
+                                } else {
+
+                                }
+                            }
+                        }
+                    });
+                </script>
+</body>
+
+</html>

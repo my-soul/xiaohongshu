@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title>后台管理中心</title>
+    <% include ./common/head.html %>
+</head>
+
+<body style="background-color:#f2f9fd;">
+    <% include ./common/header.html %>
+    <% include ./common/leftnav.html %>
+    <ul class="bread">
+        <li><a href="/admin" target="right" class="icon-home"> 首页</a></li>
+        <li><a href="#">商品列表</a></li>
+    </ul>
+    <div class="admin mb30">
+        <form method="post" action="" id="listform">
+            <div class="panel admin-panel">
+                <table class="table table-hover text-center">
+                    <tr>
+                        <th>编号</th>
+                        <th>图片</th>
+                        <th>名称</th>
+                        <th>排序</th>
+                        <th>推荐</th>
+                        <th width="10%">更新时间</th>
+                        <th width="310">操作</th>
+                    </tr>
+
+                    <% products.forEach(function(product){ %>
+
+                    <tr>
+                        <td>
+                            <%= product.product_id %>
+                        </td>
+                        <td width="10%"><img src="<%= product.product_image %>" alt="" width="70" height="70" /></td>
+                        <td>
+                            <%= product.product_name %>
+                        </td>
+                        <td>
+                            <%= product.sort %>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="tuijian" value="<%= product.product_id %>" <%if(product.hot==1){%>checked<%}%> >                            
+                        </td>
+                        <td>
+                            <%= product.create_time %>
+                        </td>
+                        <td>
+                            <div class="button-group">
+                                <a class="button border-main" href="/admin/product_edit?id=<%= product.product_id %>"><span class="icon-edit"></span> 修改</a>
+                                <a class="button border-red" href="javascript:void(0)" onclick="return del_product('<%= product.product_id %>');">
+                                    <span class="icon-trash-o"></span> 删除</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <%}); %>
+                </table>
+            </div>
+        </form>
+        <div id="laypage" class="f-tar f-py10"></div>
+	    <script type="text/javascript">
+            laypage({
+                cont: 'laypage', //容器。值支持id名、原生dom对象，jquery对象。
+                pages: <%= page_count %>, //通过后台拿到的总页数
+                curr: <%= page %>, //当前页
+                skin: '#3c8dbc',
+                skip: true,
+                jump: function(obj, first) { //触发分页后的回调
+                    if(!first) { //点击跳页触发函数自身，并传递当前页：obj.curr
+                        //demo(obj.curr);
+                        window.location.href = '/admin/record_list?page='+obj.curr;
+                    }
+                }
+            });
+        </script>
+    </div>
+
+    <script>
+        function del_product(id){
+            if(confirm('确定删除')){
+                $.ajax({
+                    url:'/product/del',
+                    type:'POST',
+                    data:{id:id},
+                    dataType:'json',
+                    success:function (data) {
+                        if(data.code == 200){
+                            alert('删除成功');
+                            location.reload();
+                        }
+                    }
+                });
+            }
+        }
+
+        $('input[name=tuijian]').click(function(){
+            $.ajax({
+                url:'/product/hot',
+                type:'POST',
+                data:{
+                    id:$(this).val(),
+                    hot:$(this).prop('checked')?1:0
+                },
+                dataType:'json',
+                success:function(data){
+
+                }
+
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title class="tit">订单支付</title>
+    <% include ./common/header.html %>
+</head>
+
+<body>
+    <div class="header">
+        <span class="back"></span>
+        <span class="tit">订单支付</span>
+    </div>
+    <div class="bg-white mt5 p10">
+        <div class="tac">
+            应付金额: <span class="ml5" style="color: #fc5b62;font-size: 22px;">&yen;<%= record.price %></span>
+        </div>
+        <div class="m30">
+            <img src="<%= qrcode %>" alt="" width="100%">
+        </div>
+    </div>
+    <div class="tac mt40 gray-d" style="">
+        Copyright©2014 TAOBEI Ltd.版权所有<br> 闽ICP备14035965号
+    </div>
+
+
+</body>
+
+</html>
